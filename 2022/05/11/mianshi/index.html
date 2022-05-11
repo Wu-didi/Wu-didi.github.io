@@ -1,0 +1,1162 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="机器学习、深度学习笔试题 面试题总结, 目标检测,点云处理,机器学习,python等">
+    <meta name="description" content="机器学习、深度学习笔试题 面试题总结一切都是为了找工作！！！整理看到的内容，以免忘记（持续更新）
+感受野如何计算？参考链接：https://blog.csdn.net/a841454735/article/details/88558906感">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    
+
+    <title>机器学习、深度学习笔试题 面试题总结 | Wu-didi</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+<meta name="generator" content="Hexo 6.1.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="Wu-didi" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Wu-didi</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Wu-didi</div>
+        <div class="logo-desc">
+            
+            学习记录
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">机器学习、深度学习笔试题 面试题总结</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6/">
+                                <span class="chip bg-color">注意力机制</span>
+                            </a>
+                        
+                            <a href="/tags/%E9%9D%A2%E8%AF%95/">
+                                <span class="chip bg-color">面试</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2022-05-11
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="机器学习、深度学习笔试题-面试题总结"><a href="#机器学习、深度学习笔试题-面试题总结" class="headerlink" title="机器学习、深度学习笔试题 面试题总结"></a>机器学习、深度学习笔试题 面试题总结</h1><p>一切都是为了找工作！！！<br>整理看到的内容，以免忘记<br>（持续更新）</p>
+<h2 id="感受野如何计算？"><a href="#感受野如何计算？" class="headerlink" title="感受野如何计算？"></a>感受野如何计算？</h2><p>参考链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/a841454735/article/details/88558906">https://blog.csdn.net/a841454735/article/details/88558906</a><br>感受野指的是一个特定的 CNN 特征（特征图上的某个点）在输入空间所受影响的区域。<br>就是特征图上的一点对应输入特征图的区域</p>
+<p>a)第一层卷积层的输出特征图像素的感受野的大小等于滤波器的大小；</p>
+<p>b)深层卷积层的感受野大小和它之前所有层的滤波器大小和步长有关系；</p>
+<p>c)计算感受野大小时，忽略了图像边缘的影响，即不考虑padding的大小。</p>
+<p>计算公式<br>**方法1 **<br>从原始input出发，逐层迭代到最后输出：<br><img src="https://img-blog.csdnimg.cn/69963e1a81b3412291effbb7bcc51902.png" alt="在这里插入图片描述"><br>其中 lk-1 为第 k-1 层对应的感受野大小，fk 为第k 层的卷积核大小，或者是池化层的池化尺寸大小。si为步长</p>
+<p><strong>top to down的方式</strong><br>即从网络的最后向前推<br>感受野的大小是由kenel size和stride size 一起决定的</p>
+<p>rfsize = f(out, stride, ksize) = (out - 1) * stride + ksize，<br>其中out是指上一层感受野的大小，stride是当前层stride<br>最后一层不带入公式，它的ksize是前一层的out</p>
+<h2 id="RPN"><a href="#RPN" class="headerlink" title="RPN"></a>RPN</h2><p>参考链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_44211398/article/details/91613803?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-0.pc_relevant_paycolumn_v3&amp;spm=1001.2101.3001.4242.1&amp;utm_relevant_index=3">RPN详解</a><br>参考链接2：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/31426458">一文读懂Faster RCNN</a><br>RPN全称是Region Proposal Network，Region Proposal的中文意思是“区域选取”，也就是“提取候选框”的意思，所以RPN就是用来提取候选框的网络</p>
+<p>RPN第一次出现在世人眼中是在Faster RCNN这个结构中，专门用来提取候选框，在RCNN和Fast RCNN等物体检测架构中，用来提取候选框的方法通常是Selective Search，是比较传统的方法，而且比较耗时，在CPU上要2s一张图。所以作者提出RPN，专门用来提取候选框，一方面RPN耗时少，另一方面RPN可以很容易结合到Fast RCNN中，称为一个整体。</p>
+<p><img src="https://img-blog.csdnimg.cn/b44f863c292740d9a16978ade6bce3e1.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5ZC05aSn54Ku,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
+<p><strong>整体流程：</strong><br>最后我们再把RPN整个流程走一遍，首先通过一系列卷积得到公共特征图，假设他的大小是N x 16 x 16，然后我们进入RPN阶段，首先经过一个3 x 3的卷积，得到一个256 x 16 x 16的特征图，也可以看作16 x 16个256维特征向量，然后经过两次1 x 1的卷积，分别得到一个18 x 16 x 16的特征图，和一个36 x 16 x 16的特征图，也就是16 x 16 x 9个结果，每个结果包含2个分数和4个坐标，再结合预先定义的Anchors，经过后处理，就得到候选框</p>
+<h2 id="AUC是什么？怎么计算"><a href="#AUC是什么？怎么计算" class="headerlink" title="AUC是什么？怎么计算"></a>AUC是什么？怎么计算</h2><p>AUC就是ROC曲线与X轴所围成的面积</p>
+<h2 id="介绍可变形卷积"><a href="#介绍可变形卷积" class="headerlink" title="介绍可变形卷积"></a>介绍可变形卷积</h2><p><strong>参考链接：<a href="(https://blog.csdn.net/LEEANG121/article/details/104234927)">[可变形卷积从概念到实现过程]</a></strong><br>可变形卷积是指卷积核在每一个元素上额外增加了一个参数方向参数，这样卷积核就能在训练过程中扩展到很大的范围。<br>我们知道卷积核的目的是为了提取输入物的特征。我们传统的卷积核通常是固定尺寸、固定大小的（例如3x3，5x5，7x7.）。这种卷积核存在的最大问题就是，对于未知的变化适应性差，泛化能力不强。</p>
+<p>卷积单元对输入的特征图在固定的位置进行采样；池化层不断减小着特征图的尺寸；RoI池化层产生空间位置受限的RoI。网络内部缺乏能够解决这个问题的模块，这会产生显著的问题，例如，同一CNN层的激活单元的感受野尺寸都相同，这对于编码位置信息的浅层神经网络并不可取，因为不同的位置可能对应有不同尺度或者不同形变的物体，这些层需要能够自动调整尺度或者感受野的方法。再比如，目标检测虽然效果很好但是都依赖于基于特征提取的边界框，这并不是最优的方法，尤其是对于非网格状的物体而言。</p>
+<h2 id="介绍Transformer公式"><a href="#介绍Transformer公式" class="headerlink" title="介绍Transformer公式"></a>介绍Transformer公式</h2><p>参考链接：**<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/325839123/answer/1903376265">深度学习attention机制中的Q,K,V分别是从哪来的</a>**</p>
+<h2 id="有哪些代表性的Attention？"><a href="#有哪些代表性的Attention？" class="headerlink" title="有哪些代表性的Attention？"></a>有哪些代表性的Attention？</h2><p>之前写过注意力的博文</p>
+<h2 id="介绍常用的移动端-x2F-轻量化模型"><a href="#介绍常用的移动端-x2F-轻量化模型" class="headerlink" title="介绍常用的移动端/轻量化模型"></a>介绍常用的移动端/轻量化模型</h2><h2 id="XGboost是怎么做特征筛选的？"><a href="#XGboost是怎么做特征筛选的？" class="headerlink" title="XGboost是怎么做特征筛选的？"></a>XGboost是怎么做特征筛选的？</h2><h2 id="CNN中可以不用池化么？为什么？"><a href="#CNN中可以不用池化么？为什么？" class="headerlink" title="CNN中可以不用池化么？为什么？"></a>CNN中可以不用池化么？为什么？</h2><h2 id="介绍目标检测全部流程（输入到输出）"><a href="#介绍目标检测全部流程（输入到输出）" class="headerlink" title="介绍目标检测全部流程（输入到输出）"></a>介绍目标检测全部流程（输入到输出）</h2><h2 id="手推-LR"><a href="#手推-LR" class="headerlink" title="手推 LR"></a>手推 LR</h2><p>参考链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43249038/article/details/107315779">【here】</a></p>
+<h2 id="介绍知识蒸馏原理"><a href="#介绍知识蒸馏原理" class="headerlink" title="介绍知识蒸馏原理"></a>介绍知识蒸馏原理</h2><h2 id="ReLU和ReLU6的区别"><a href="#ReLU和ReLU6的区别" class="headerlink" title="ReLU和ReLU6的区别"></a>ReLU和ReLU6的区别</h2><p>参考链接:<a target="_blank" rel="noopener" href="https://blog.csdn.net/zisuina_2/article/details/113603346?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165197750816782395390550%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=165197750816782395390550&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_click~default-1-113603346-null-null.142%5Ev9%5Epc_search_result_control_group,157%5Ev4%5Econtrol&amp;utm_term=relu6&amp;spm=1018.2226.3001.4187">【here】</a></p>
+<h2 id="KNN-和-K-means介绍一下"><a href="#KNN-和-K-means介绍一下" class="headerlink" title="KNN 和 K-means介绍一下"></a>KNN 和 K-means介绍一下</h2><p>这个比较简单</p>
+<h2 id="Bagging和Boosting的区别"><a href="#Bagging和Boosting的区别" class="headerlink" title="Bagging和Boosting的区别"></a>Bagging和Boosting的区别</h2><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/u012587024/article/details/86300168">参考链接1</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/u014114990/article/details/50948079?spm=1001.2101.3001.6661.1&amp;utm_medium=distribute.pc_relevant_t0.none-task-blog-2~default~BlogCommendFromBaidu~default-1-50948079-blog-86300168.pc_relevant_without_ctrlist_v4&amp;depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2~default~BlogCommendFromBaidu~default-1-50948079-blog-86300168.pc_relevant_without_ctrlist_v4&amp;utm_relevant_index=1">参考链接2</a></p>
+<p><strong>bagging</strong>：bootstrap aggregating的缩写。让该学习算法训练多轮，每轮的训练集由从初始的训练集中随机取出的n个训练样本组成，某个初始训练样本在某轮训练集中可以出现多次或根本不出现，训练之后可得到一个预测函数序列h_1，⋯ ⋯h_n ，最终的预测函数H对分类问题采用投票方式，对回归问题采用简单平均方法对新示例进行判别。</p>
+<p>训练R个分类器f_i，分类器之间其他相同就是参数不同。其中f_i是通过从训练集合中(N篇文档)随机取(取后放回)N次文档构成的训练集合训练得到的。对于新文档d，用这R个分类器去分类，得到的最多的那个类别作为d的最终类别。</p>
+<p><strong>boosting</strong>: 其中主要的是AdaBoost（Adaptive Boosting）。初始化时对每一个训练例赋相等的权重1／n，然后用该学算法对训练集训练t轮，每次训练后，对训练失败的训练例赋以较大的权重，也就是让学习算法在后续的学习中集中对比较难的训练例进行学习，从而得到一个预测函数序列h_1,⋯, h_m , 其中h_i也有一定的权重，预测效果好的预测函数权重较大，反之较小。最终的预测函数H对分类问题采用有权重的投票方式，对回归问题采用加权平均的方法对新示例进行判别。<br>（类似Bagging方法，但是训练是串行进行的，第k个分类器训练时关注对前k-1分类器中错分的文档，即不是随机取，而是加大取这些文档的概率。)<br> （pku， sewm，shinningmonster.）</p>
+<p><strong>Bagging与Boosting的区别</strong>：二者的主要区别是取样方式不同。Bagging采用均匀取样，而Boosting根据错误率来取样，因此Boosting的分类精度要优于Bagging。Bagging的训练集的选择是随机的，各轮训练集之间相互独立，而Boostlng的各轮训练集的选择与前面各轮的学习结果有关；Bagging的各个预测函数没有权重，而Boosting是有权重的；Bagging的各个预测函数可以并行生成，而Boosting的各个预测函数只能顺序生成。对于象神经网络这样极为耗时的学习方法。Bagging可通过并行训练节省大量时间开销。<br>bagging和boosting都可以有效地提高分类的准确性。在大多数数据集中，boosting的准确性比bagging高。在有些数据集中，boosting会引起退化— Overfit。<br>Boosting思想的一种改进型 AdaBoost方法在邮件过滤、文本分类方面都有很好的性能。</p>
+<p>**gradient boosting（又叫Mart, Treenet)**：Boosting是一种思想，Gradient Boosting是一种实现Boosting的方法，它主要的思想是，每一次建立模型是在之前建立模型损失函数的梯度下降方向。损失函数(loss function)描述的是模型的不靠谱程度，损失函数越大，则说明模型越容易出错。如果我们的模型能够让损失函数持续的下降，则说明我们的模型在不停的改进，而最好的方式就是让损失函数在其梯度（Gradient)的方向上下降。</p>
+<p><strong>Rand forest</strong>： 随机森林，顾名思义，是用随机的方式建立一个森林，森林里面有很多的决策树组成，随机森林的每一棵决策树之间是没有关联的。在得到森林之后，当有一个新的输入样本进入的时候，就让森林中的每一棵决策树分别进行一下判断，看看这个样本应该属于哪一类（对于分类算法），然后看看哪一类被选择最多，就预测这个样本为那一类。 在建立每一棵决策树的过程中，有两点需要注意 - 采样与完全分裂。首先是两个随机采样的过程，random forest对输入的数据要进行行、列的采样。对于行采样，采用有放回的方式，也就是在采样得到的样本集合中，可能有重复的样本。假设输入样本为N个，那么采样的样本也为N个。这样使得在训练的时候，每一棵树的输入样本都不是全部的样本，使得相对不容易出现over-fitting。然后进行列采样，从M个feature中，选择m个(m &lt;&lt; M)。之后就是对采样之后的数据使用完全分裂的方式建立出决策树，这样决策树的某一个叶子节点要么是无法继续分裂的，要么里面的所有样本的都是指向的同一个分类。一般很多的决策树算法都一个重要的步骤 - 剪枝，但是这里不这样干，由于之前的两个随机采样的过程保证了随机性，所以就算不剪枝，也不会出现over-fitting。 按这种算法得到的随机森林中的每一棵都是很弱的，但是大家组合起来就很厉害了。<br><em>可以这样比喻随机森林算法：每一棵决策树就是一个精通于某一个窄领域的专家（因为我们从M个feature中选择m让每一棵决策树进行学习），这样在随机森林中就有了很多个精通不同领域的专家，对一个新的问题（新的输入数据），可以用不同的角度去看待它，最终由各个专家，投票得到结果。</em></p>
+<p>Rand forest与bagging的区别：1）. Rand forest是选与输入样本的数目相同多的次数（可能一个样本会被选取多次，同时也会造成一些样本不会被选取到），而bagging一般选取比输入样本的数目少的样本；2）. bagging是用全部特征来得到分类器，而rand forest是需要从全部特征中选取其中的一部分来训练得到分类器； 一般Rand forest效果比bagging效果好！</p>
+<h2 id="小卷积核和大卷积核的应用场景"><a href="#小卷积核和大卷积核的应用场景" class="headerlink" title="小卷积核和大卷积核的应用场景"></a>小卷积核和大卷积核的应用场景</h2><h2 id="怎么处理长尾问题？从样本，模型的角度来看"><a href="#怎么处理长尾问题？从样本，模型的角度来看" class="headerlink" title="怎么处理长尾问题？从样本，模型的角度来看"></a>怎么处理长尾问题？从样本，模型的角度来看</h2><p>以下是个人的回答：<br>样本方面：通过对样本量较少的类别进行过采样，利用一些图像增强的方法，生成图像，达到各类别均衡。缺点是容易过拟合<br>模型角度：1 对损失函数进行改进，给予小样本的更多权值。  2 针对梯度进行改进，（还不太熟悉）</p>
+<h2 id="机器学习笔试题"><a href="#机器学习笔试题" class="headerlink" title="机器学习笔试题"></a>机器学习笔试题</h2><h3 id="bootstrap统计抽样方法：有放回地从总共N个样本中抽样n个样本。"><a href="#bootstrap统计抽样方法：有放回地从总共N个样本中抽样n个样本。" class="headerlink" title="bootstrap统计抽样方法：有放回地从总共N个样本中抽样n个样本。"></a>bootstrap统计抽样方法：有放回地从总共N个样本中抽样n个样本。</h3><p>基于bootstrap，有以下常用的机器学习方法</p>
+<ul>
+<li>boosting</li>
+<li>bagging</li>
+<li>random forest（RF, 随机森林）<h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3>基于规则的排序方案 :依据规则质量的某种度量对规则进行排序。这种排序方案确保每一个测试记录都是由覆盖它的”最好的”规则来分类。<br>基于类的排序方案:属于同一个类的规则在规则集R中一起出现。然后，这些规则根据它们所属的类信息一起排序</li>
+</ul>
+<h3 id="机器学习中L1正则化和L2正则化的区别是？"><a href="#机器学习中L1正则化和L2正则化的区别是？" class="headerlink" title="机器学习中L1正则化和L2正则化的区别是？"></a>机器学习中L1正则化和L2正则化的区别是？</h3><p>答案：<br>使用L1可以得到稀疏的权值<br>使用L2可以得到平滑的权值<br>一些解析：</p>
+<p><img src="https://img-blog.csdnimg.cn/07b6529fff7249bc8deb2054dc0f2013.png" alt="在这里插入图片描述"><br>参考链接:<a target="_blank" rel="noopener" href="https://blog.csdn.net/zouxy09/article/details/24971995/">【机器学习中的范数规则化之（一）L0、L1与L2范数】</a></p>
+<h3 id="机器学习中做特征选择时，可能用到的方法有？"><a href="#机器学习中做特征选择时，可能用到的方法有？" class="headerlink" title="机器学习中做特征选择时，可能用到的方法有？"></a>机器学习中做特征选择时，可能用到的方法有？</h3><p>卡方 信息增益 平均互信息 期望交叉熵</p>
+<p>在文本分类中，首先要对数据进行特征提取，特征提取中又分为特征选择和特征抽取两大类，在特征选择算法中有互信息，文档频率，信息增益，卡方检验以及期望交叉熵。<br>期望交叉熵，以文本分类为例子，期望交叉熵用来度量一个词对于整体的重要程度。<br>在ID3决策树中，也使用信息增益作为特征选择的方法，在C4.5决策树中，使用信息增益比作为特征选择的方法，在CART中，使用基尼指数作为特征选择的方法</p>
+<h3 id="以下哪些方法不可以直接来对文本分类？"><a href="#以下哪些方法不可以直接来对文本分类？" class="headerlink" title="以下哪些方法不可以直接来对文本分类？"></a>以下哪些方法不可以直接来对文本分类？</h3><p>Kmeans 决策树 支持向量机 KNN<br>答案是Kmeans<br>不太懂<br>kmeans和knn之间的区别<br>参考链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/cranberrycookie/article/details/91880674?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165223971216781432910782%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&amp;request_id=165223971216781432910782&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_ecpm_v1~rank_v31_ecpm-1-91880674-null-null.142%5Ev9%5Epc_search_result_control_group,157%5Ev4%5Econtrol&amp;utm_term=kmeans%E5%92%8Cknn%E4%B9%8B%E9%97%B4%E7%9A%84%E5%8C%BA%E5%88%AB&amp;spm=1018.2226.3001.4187">kmeans和knn相同点和不同点</a></p>
+<p>区别1：聚类和分类最大的不同在于，分类的目标是事先已知的，而聚类则不一样，聚类事先不知道目标变量是什么，类别没有像分类那样被预先定义出来，所以，聚类有时也叫无监督学习。聚类分析试图将相似的对象归入同一簇，将不相似的对象归为不同簇</p>
+<p>区别2：K-means算法虽然比较容易实现，但是其可能收敛到局部最优解，且在大规模数据集上收敛速度相对较慢。</p>
+<h3 id="下列哪个不属于CRF模型对于HMM和MEMM模型的优势（-）"><a href="#下列哪个不属于CRF模型对于HMM和MEMM模型的优势（-）" class="headerlink" title="下列哪个不属于CRF模型对于HMM和MEMM模型的优势（ ）"></a>下列哪个不属于CRF模型对于HMM和MEMM模型的优势（ ）</h3><p>特征灵活<br>速度快  ✔<br>可容纳较多上下文信息<br>全局最优<br>——解析<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_40103562/article/details/109780449?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165224011816782391838789%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=165224011816782391838789&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-2-109780449-null-null.142%5Ev9%5Epc_search_result_control_group,157%5Ev4%5Econtrol&amp;utm_term=CRF&amp;spm=1018.2226.3001.4187">CRF模型详解</a></p>
+<h3 id="下列方法中，可以用于特征降维的方法包括（）"><a href="#下列方法中，可以用于特征降维的方法包括（）" class="headerlink" title="下列方法中，可以用于特征降维的方法包括（）"></a>下列方法中，可以用于特征降维的方法包括（）</h3><p>主成分分析PCA  ✔<br>线性判别分析LDA  ✔<br>深度学习SparseAutoEncoder  ✔<br>矩阵奇异值分解SVD  ✔<br>最小二乘法LeastSquares</p>
+<h3 id="Nave-Bayes是一种特殊的Bayes分类器-特征变量是X-类别标签是C-它的一个假定是"><a href="#Nave-Bayes是一种特殊的Bayes分类器-特征变量是X-类别标签是C-它的一个假定是" class="headerlink" title="Nave Bayes是一种特殊的Bayes分类器,特征变量是X,类别标签是C,它的一个假定是:()"></a>Nave Bayes是一种特殊的Bayes分类器,特征变量是X,类别标签是C,它的一个假定是:()</h3><p>正确答案: C<br>各类别的先验概率P(C)是相等的<br>以0为均值，sqr(2)/2为标准差的正态分布<br>特征变量X的各个维度是类别条件独立随机变量<br>P(X|C)是高斯分布</p>
+<h3 id="以下哪个模型是生成式模型："><a href="#以下哪个模型是生成式模型：" class="headerlink" title="以下哪个模型是生成式模型："></a>以下哪个模型是生成式模型：</h3><p>正确答案: A<br>贝叶斯模型<br>逻辑回归<br>SVM<br>条件随机场</p>
+<p>————<br>生成模型，就是生成(数据的分布)的模型；<br>判别模型，就是判别(数据输出量)的模型。<br><strong>生成式模型：</strong></p>
+<ul>
+<li>朴素贝叶斯</li>
+<li>混合高斯模型</li>
+<li>隐马尔科夫模型(HMM)</li>
+<li>贝叶斯网络</li>
+<li>Sigmoid Belief Networks</li>
+<li>马尔科夫随机场(Markov Random Fields)</li>
+<li>深度信念网络(DBN)  </li>
+<li><strong>判别式模型：</strong></li>
+<li>K近邻(KNN)</li>
+<li>线性回归(Linear Regression)</li>
+<li>逻辑斯蒂回归(Logistic Regression)</li>
+<li>神经网络(NN)</li>
+<li>支持向量机(SVM)</li>
+<li>高斯过程(Gaussian Process)</li>
+<li>条件随机场(CRF)</li>
+<li>CART(Classification and Regression Tree)</li>
+</ul>
+<h3 id="以下关于正则化的描述正确的是（）"><a href="#以下关于正则化的描述正确的是（）" class="headerlink" title="以下关于正则化的描述正确的是（）"></a>以下关于正则化的描述正确的是（）</h3><p>正确答案: A B C D<br>正则化可以防止过拟合<br>L1正则化能得到稀疏解<br>L2正则化约束了解空间<br>Dropout也是一种正则化方法</p>
+<h3 id="在统计模式识分类问题中，当先验概率未知时，可以使用（）"><a href="#在统计模式识分类问题中，当先验概率未知时，可以使用（）" class="headerlink" title="在统计模式识分类问题中，当先验概率未知时，可以使用（）"></a>在统计模式识分类问题中，当先验概率未知时，可以使用（）</h3><p>正确答案: B C<br>最小损失准则<br>N-P判决<br>最小最大损失准则<br>最小误判概率准则</p>
+<h3 id="以下-属于线性分类器最佳准则"><a href="#以下-属于线性分类器最佳准则" class="headerlink" title="以下()属于线性分类器最佳准则?"></a>以下()属于线性分类器最佳准则?</h3><p>正确答案: A C D<br>感知准则函数<br>贝叶斯分类<br>支持向量机<br>Fisher准则<br>——————<br>线性分类器有三大类：感知器准则函数、SVM、Fisher准则，而贝叶斯分类器不是线性分类器。<br>感知器准则函数：代价函数J=-(W*X+w0)，分类的准则是最小化代价函数。感知器是神经网络（NN）的基础，网上有很多介绍。<br>SVM：支持向量机也是很经典的算法，优化目标是最大化间隔（margin），又称最大间隔分类器，是一种典型的线性分类器。（使用核函数可解决非线性问题）<br>Fisher准则：更广泛的称呼是线性判别分析（LDA），将所有样本投影到一条远点出发的直线，使得同类样本距离尽可能小，不同类样本距离尽可能大，具体为最大化“广义瑞利商”。<br>贝叶斯分类器：一种基于统计方法的分类器，要求先了解样本的分布特点（高斯、指数等），所以使用起来限制很多。在满足一些特定条件下，其优化目标与线性分类器有相同结构（同方差高斯分布等），其余条件下不是线性分类。</p>
+<h3 id="下列哪些方法可以用来对高维数据进行降维"><a href="#下列哪些方法可以用来对高维数据进行降维" class="headerlink" title="下列哪些方法可以用来对高维数据进行降维:"></a>下列哪些方法可以用来对高维数据进行降维:</h3><p>正确答案: A B C D E F<br>LASSO<br>主成分分析法<br>聚类分析<br>小波分析法<br>线性判别法<br>拉普拉斯特征映射</p>
+<h2 id="😊深度学习笔试题"><a href="#😊深度学习笔试题" class="headerlink" title="😊深度学习笔试题"></a>😊深度学习笔试题</h2><h3 id="ResNet-50-有多少个卷积层"><a href="#ResNet-50-有多少个卷积层" class="headerlink" title="ResNet-50 有多少个卷积层?"></a>ResNet-50 有多少个卷积层?</h3><p>49个<br>49个卷积层+1个全连接层</p>
+<h3 id="Dropout不影响测试时间"><a href="#Dropout不影响测试时间" class="headerlink" title="Dropout不影响测试时间"></a>Dropout不影响测试时间</h3><h3 id="下列哪些项所描述的相关技术是错误的？"><a href="#下列哪些项所描述的相关技术是错误的？" class="headerlink" title="下列哪些项所描述的相关技术是错误的？"></a>下列哪些项所描述的相关技术是错误的？</h3><p>正确答案: C<br>AdaGrad使用的是一阶差分(first order differentiation)<br>L-BFGS使用的是二阶差分(second order differentiation)<br>AdaGrad使用的是二阶差分<br>————<br>AdaGrad是梯度下降法，用的是一阶导数信息，L-BFGS是拟牛顿法，在牛顿法的基础上发展而来的，用到了二阶导数信息。<br>牛顿法、拟牛顿法、adam，rmsgrad用到了二阶导<br>momentum、adgrad用的是一阶导，adgrad的特点是历史梯度正则。</p>
+<h3 id="深度学习中的激活函数需要具有哪些属性？（）"><a href="#深度学习中的激活函数需要具有哪些属性？（）" class="headerlink" title="深度学习中的激活函数需要具有哪些属性？（）"></a>深度学习中的激活函数需要具有哪些属性？（）</h3><p>正确答案: A B D<br>计算简单<br>非线性<br>具有饱和区<br>几乎处处可微<br>————<br>参考链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/zhanghao3389/article/details/85267461">【激活函数必要的属性】</a></p>
+<ol>
+<li>非线性：<br>即导数不是常数。这个条件是多层神经网络的基础，保证多层网络不退化成单层线性网络。这也是激活函数的意义所在。</li>
+<li>几乎处处可微：<br>可微性保证了在优化中梯度的可计算性。传统的激活函数如sigmoid等满足处处可微。对于分段线性函数比如ReLU，只满足几乎处处可微（即仅在有限个点处不可微）。对于SGD算法来说，由于几乎不可能收敛到梯度接近零的位置，有限的不可微点对于优化结果不会有很大影响。</li>
+<li>计算简单：<br>非线性函数有很多。极端的说，一个多层神经网络也可以作为一个非线性函数，类似于Network In Network中把它当做卷积操作的做法。但激活函数在神经网络前向的计算次数与神经元的个数成正比，因此简单的非线性函数自然更适合用作激活函数。这也是ReLU之流比其它使用Exp等操作的激活函数更受欢迎的其中一个原因。</li>
+<li>非饱和性（saturation）：<br>饱和指的是在某些区间梯度接近于零（即梯度消失），使得参数无法继续更新的问题。最经典的例子是Sigmoid，它的导数在x为比较大的正值和比较小的负值时都会接近于0。更极端的例子是阶跃函数，由于它在几乎所有位置的梯度都为0，因此处处饱和，无法作为激活函数。ReLU在x&gt;0时导数恒为1，因此对于再大的正值也不会饱和。但同时对于x&lt;0，其梯度恒为0，这时候它也会出现饱和的现象（在这种情况下通常称为dying ReLU）。Leaky ReLU和PReLU的提出正是为了解决这一问题。</li>
+<li>单调性（monotonic）：<br>即导数符号不变。这个性质大部分激活函数都有，除了诸如sin、cos等。个人理解，单调性使得在激活函数处的梯度方向不会经常改变，从而让训练更容易收敛。</li>
+<li>输出范围有限：<br>有限的输出范围使得网络对于一些比较大的输入也会比较稳定，这也是为什么早期的激活函数都以此类函数为主，如Sigmoid、TanH。但这导致了前面提到的梯度消失问题，而且强行让每一层的输出限制到固定范围会限制其表达能力。因此现在这类函数仅用于某些需要特定输出范围的场合，比如概率输出（此时loss函数中的log操作能够抵消其梯度消失的影响）、LSTM里的gate函数。</li>
+<li>接近恒等变换（identity）：<br>即约等于x。这样的好处是使得输出的幅值不会随着深度的增加而发生显著的增加，从而使网络更为稳定，同时梯度也能够更容易地回传。这个与非线性是有点矛盾的，因此激活函数基本只是部分满足这个条件，比如TanH只在原点附近有线性区（在原点为0且在原点的导数为1），而ReLU只在x&gt;0时为线性。这个性质也让初始化参数范围的推导更为简单。这种恒等变换的性质也被其他一些网络结构设计所借鉴，比如CNN中的ResNet和RNN中的LSTM。</li>
+<li>参数少：<br>大部分激活函数都是没有参数的。像PReLU带单个参数会略微增加网络的大小。还有一个例外是Maxout，尽管本身没有参数，但在同样输出通道数下k路Maxout需要的输入通道数是其它函数的k倍，这意味着神经元数目也需要变为k倍；但如果不考虑维持输出通道数的情况下，该激活函数又能将参数个数减少为原来的k倍。<br>归一化（normalization）：<br>这个是最近才出来的概念，对应的激活函数是SELU，主要思想是使样本分布自动归一化到零均值、单位方差的分布，从而稳定训练。在这之前，这种归一化的思想也被用于网络结构的设计，比如Batch Normalization。</li>
+</ol>
+<p><img src="https://img-blog.csdnimg.cn/86ba723a5c29401baca21569a5a759b7.png" alt="在这里插入图片描述"></p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">WUDI</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://Wu-didi.github.io/2022/05/11/mianshi/">http://Wu-didi.github.io/2022/05/11/mianshi/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">WUDI</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6/">
+                                    <span class="chip bg-color">注意力机制</span>
+                                </a>
+                            
+                                <a href="/tags/%E9%9D%A2%E8%AF%95/">
+                                    <span class="chip bg-color">面试</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+    <div class="livere-card card" data-aos="fade-up">
+    <!-- 来必力City版安装代码 -->
+    <div id="lv-container" class="card-content" data-id="city" data-uid="MTAyMC81NjMwNS8zMjc2OA==">
+        <script type="text/javascript">
+            (function (d, s) {
+                let j, e = d.getElementsByTagName(s)[0];
+                if (typeof LivereTower === 'function') {
+                    return;
+                }
+
+                j = d.createElement(s);
+                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                j.async = true;
+
+                e.parentNode.insertBefore(j, e);
+            })(document, 'script');
+        </script>
+        <noscript>为正常使用来必力评论功能请激活JavaScript。</noscript>
+    </div>
+    <!-- City版安装代码已完成 -->
+</div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2022/05/11/mianshi/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="机器学习、深度学习笔试题 面试题总结">
+                        
+                        <span class="card-title">机器学习、深度学习笔试题 面试题总结</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-11
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            WUDI
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6/">
+                        <span class="chip bg-color">注意力机制</span>
+                    </a>
+                    
+                    <a href="/tags/%E9%9D%A2%E8%AF%95/">
+                        <span class="chip bg-color">面试</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/05/03/attention/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="注意力SE CBAM CA ECA等模块整理">
+                        
+                        <span class="card-title">注意力SE CBAM CA ECA等模块整理</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-03
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            WUDI
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/cv/">
+                        <span class="chip bg-color">cv</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6/">
+                        <span class="chip bg-color">注意力机制</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="/libs/aplayer/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2022</span>
+            
+            <a href="/about" target="_blank">WUDI</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/Wu-didi" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:164662525@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=164662525" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 164662525" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+
+
+    <a href="https://blog.csdn.net/weixin_44645198?type=blog" class="tooltipped" target="_blank" data-tooltip="关注我的CSDN: https://blog.csdn.net/weixin_44645198?type=blog" data-position="top" data-delay="50">
+        <i class="fab fa-csdn">CSDN</i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    
+
+    
+
+    <!-- 雪花特效 -->
+    
+
+    <!-- 鼠标星星特效 -->
+    
+
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
