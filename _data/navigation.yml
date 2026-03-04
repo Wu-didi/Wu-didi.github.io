@@ -6,8 +6,11 @@ main:
   - title: "最新动态"
     url: "/#-news"
 
-  - title: "项目与科研"
+  - title: "论文发表"
     url: "/#-publications"
+
+  - title: "项目经历"
+    url: "/#-projects"
 
   - title: "荣誉奖项"
     url: "/#-honors-and-awards"

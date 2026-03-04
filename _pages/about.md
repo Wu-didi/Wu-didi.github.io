@@ -20,6 +20,11 @@ redirect_from:
 
 # 📝 Publications
 
+- 暂无已公开论文条目，后续将按以下格式补充：
+- *作者*，论文标题，会议/期刊，年份。[\[Paper\]]() [\[Code\]]()
+
+# 💻 Projects
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Project 1</div><img src='images/500x300.png' alt="project-1" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
