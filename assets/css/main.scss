@@ -119,6 +119,10 @@ h1:before, .anchor:before {
     border-top: 1px solid #efefef;
 }
 
+.project-video-showcase--single {
+    max-width: 760px;
+}
+
 .project-video-player {
     video {
         display: block;
@@ -191,6 +195,10 @@ h1:before, .anchor:before {
     .project-video-showcase {
         grid-template-columns: minmax(0, 2fr) minmax(180px, .85fr);
         align-items: start;
+    }
+
+    .project-video-showcase--single {
+        grid-template-columns: 1fr;
     }
 
     .project-video-list {

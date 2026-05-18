@@ -42,55 +42,74 @@ redirect_from:
 
 # 💻 Projects
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Project 1</div><img src='images/500x300.png' alt="project-1" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Project 1</div><img src='images/500x300.png' alt="dual-arm-robot-folding" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**双臂机器人叠衣任务｜基于 π0.5 的叠衣任务适配与实机验证**
+
+- 基于 Koch v1.1 双臂机器人与 π0.5 具身基础策略，完成柔性物体叠衣任务的数据采集、训练流程复现、优化与实机闭环验证。
+- 采集 750 条专家演示 episode，覆盖抓取、展开、对齐、折叠等关键阶段，构建面向双臂协同操作的真实机器人模仿学习数据集。
+- 基于实机 rollout 结果，针对抓取偏移、衣物滑落等失败模式，采用 DAgger 迭代纠偏补充 500 条 episode，缓解策略分布偏移。
+- 在 LeRobot 中适配 π0.5 训练 pipeline，复现 training-time RTC 与 DSRL-style latent-space 后训练流程，完成动作 chunk、reward、critic/actor 训练和实机评估模块。
+- 通过 ablation 发现 DSRL 在长程柔性物体任务中收益有限，分析其受 reward 稀疏、critic 估计偏差和 latent-action 对齐误差影响；最终基于 DAgger + RTC 数据闭环将实机成功率提升至 80%，较 GR00T N1.5 baseline 提升约 10%。
+</div>
+<div class="project-video-showcase project-video-showcase--single" data-video-showcase>
+  <div class="project-video-player">
+    <video controls playsinline preload="metadata" poster="/images/500x300.png">
+      <source src="/files/video/机器人/robot1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="project-video-current">双臂机器人叠衣任务实机演示</div>
+  </div>
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Project 2</div><img src='images/500x300.png' alt="autonomous-driving-mpv" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **校企联合实车项目｜新能源 MPV 智能驾驶算法开发**
 
 **时间**：2023
 
-- 负责从标定、感知、规划、控制到系统集成和上车部署的全链路交付，完成校园道路场景实车闭环验证。
-- 完成相机、激光雷达、相机与雷达、惯导等多类标定任务，为多传感器融合提供工程基础。
-- 基于 YOLO 系列实现交通信号灯检测，基于 PointPillars 实现激光雷达 3D 目标检测，并部署至 Orin。
-- 规划侧采用 A* 与 Lattice 实现绕障、会车等能力；轨迹跟踪侧结合改进纯跟踪算法与 MPC，支持车辆在限速 50 km/h 下稳定行驶。
-- 基于 ROS2 搭建智能驾驶系统并完成车端部署与实车调试。
+- 负责全流程开发，从标定、建图、感知、规划、控制、系统集成到上车部署完成全链路交付，完成道路场景实车闭环验证。
+- **智驾系统**：从传感器安装到点亮，打通软硬件流程，使用 ROS2 搭建智驾系统，并在车上完成部署以及实车调试。
+- **传感器标定与建图**：参与单个相机标定、激光雷达间标定、相机与雷达标定、惯导标定；基于 Vector Map Builder 构建高精地图。
+- **规划**：采用 A* 算法进行全局规划，局部避障采用 Lattice 算法与 A* 算法，实现绕障、会车等基础能力。
+- **感知**：使用 YOLO 系列算法完成交通信号灯检测；基于 PointPillars 实现激光雷达 3D 目标检测，并部署到 Orin。
+- **控制**：对纯跟踪算法进行改进使用，并在弯道切换 MPC 算法，完成限速 50 km/h 条件下的实车闭环验证。
 </div>
 <div class="project-video-showcase" data-video-showcase>
   <div class="project-video-player">
-    <video controls preload="metadata" poster="/images/500x300.png">
+    <video controls playsinline preload="metadata" poster="/images/500x300.png">
       <source src="/files/video/自动驾驶/AD1.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-    <div class="project-video-current">自动驾驶演示 1</div>
+    <div class="project-video-current">自动驾驶实车演示 1</div>
   </div>
-  <div class="project-video-list" aria-label="Project 1 videos">
+  <div class="project-video-list" aria-label="Project 2 videos">
     <button class="project-video-tab is-active" type="button" data-video-src="/files/video/自动驾驶/AD1.mp4" aria-pressed="true">
       <span class="project-video-index">01</span>
-      <span class="project-video-name">自动驾驶演示 1</span>
+      <span class="project-video-name">实车演示 1</span>
     </button>
     <button class="project-video-tab" type="button" data-video-src="/files/video/自动驾驶/AD2.mp4" aria-pressed="false">
       <span class="project-video-index">02</span>
-      <span class="project-video-name">自动驾驶演示 2</span>
+      <span class="project-video-name">实车演示 2</span>
     </button>
     <button class="project-video-tab" type="button" data-video-src="/files/video/自动驾驶/AD3.mp4" aria-pressed="false">
       <span class="project-video-index">03</span>
-      <span class="project-video-name">自动驾驶演示 3</span>
+      <span class="project-video-name">实车演示 3</span>
     </button>
     <button class="project-video-tab" type="button" data-video-src="/files/video/自动驾驶/AD4.mp4" aria-pressed="false">
       <span class="project-video-index">04</span>
-      <span class="project-video-name">自动驾驶演示 4</span>
+      <span class="project-video-name">实车演示 4</span>
     </button>
     <button class="project-video-tab" type="button" data-video-src="/files/video/自动驾驶/AD5.mp4" aria-pressed="false">
       <span class="project-video-index">05</span>
-      <span class="project-video-name">自动驾驶演示 5</span>
+      <span class="project-video-name">实车演示 5</span>
     </button>
     <button class="project-video-tab" type="button" data-video-src="/files/video/自动驾驶/AD6.mp4" aria-pressed="false">
       <span class="project-video-index">06</span>
-      <span class="project-video-name">自动驾驶演示 6</span>
-    </button>
-    <button class="project-video-tab" type="button" data-video-src="/files/video/机器人/robot1.mp4" aria-pressed="false">
-      <span class="project-video-index">07</span>
-      <span class="project-video-name">机器人演示</span>
+      <span class="project-video-name">实车演示 6</span>
     </button>
   </div>
 </div>
@@ -127,38 +146,36 @@ redirect_from:
 </script>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Project 2</div><img src='images/500x300.png' alt="project-2" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-**交通基础设施智能巡检系统｜异常检测落地 + LLM 微调（YOLO → Qwen-7B）**
-
-**时间**：2023 - 2024
-
-- 基于道路巡检与交通电子警察数据，实现交通信号灯、交通诱导屏等设备的异常状态检测。
-- 制定标注规范并搭建 CVAT 标注平台，组织数据标注流程，支撑模型训练与评估闭环。
-- 设计矩形特征提取模块并提出长宽比约束 NMS，mAP 提升 8 个点至 92%。
-- 结合 PTQ/QAT 量化与 TensorRT 加速，部署至 Jetson AGX Xavier，在 1280×720 输入下达到 30 FPS。
-- 基于 Flask 搭建推理服务，支持多进程、多 GPU 部署，并通过 Nginx 负载均衡提供统一接口。
-- 基于 Qwen-7B 构建异常检测与异常解释能力，采用 LoRA + GRPO 微调后精度达到 93%。
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Project 3</div><img src='images/500x300.png' alt="project-3" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Project 3</div><img src='images/500x300.png' alt="city-memory-driving" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **城市记忆行车｜Transformer 跟踪 Head 设计与集成**
 
 **时间**：2024 - 至今
 
-- 负责基于 Transformer 的端到端跟踪 Head 设计，并集成到 BEV 感知框架，实现检测、跟踪、预测联合建模。
-- 设计不确定性感知 Query 生成模块，增强低置信与噪声观测条件下的关联稳定性。
-- 设计 3D 边界框迭代精修模块，利用历史 Query 与时序信息降低单帧检测误差在跟踪中的累积。
-- 引入轨迹预测分支并将结果反哺检测与定位，提升遮挡场景和稀疏观测条件下的目标定位能力。
-- 在 nuScenes 数据集上完成训练与推理链路打通，在 800×320 输入条件下达到 AMOTA 0.438 / AMOTP 1.29。
+- 负责基于 Transformer 的端到端跟踪 head 搭建，并集成到 BEV 感知框架中，实现检测、跟踪、预测的联合建模与时序关联。
+- 设计不确定性感知 Query 生成模块：基于目标置信度生成查询向量，使关联与状态更新对低置信、噪声观测更稳定。
+- 设计 3D 边界框迭代精修模块：利用历史 query 与时序信息对初始检测框进行逐步优化，缓解单帧检测误差在跟踪中的累积。
+- 引入轨迹预测分支并作为耦合信息反哺检测和定位：预测未来轨迹提供下一帧参考点，提升遮挡与稀疏观测下的目标定位能力。
+- 在 nuScenes 数据集上完成训练与推理链路打通，输入分辨率 800×320 条件下达到 AMOTA 0.438 / AMOTP 1.29。
 </div>
 </div>
 
-- 技术关键词：`Python`、`PyTorch`、`ROS2`、`TensorRT`、`YOLO`、`PointPillars`、`BEV`、`Transformer`、`Qwen-7B`
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Project 4</div><img src='images/500x300.png' alt="traffic-infrastructure-inspection" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**交通基础设施智能巡检系统｜异常检测落地**
+
+**时间**：2023 - 2024
+
+- 基于道路巡检数据以及交通电子警察数据，实现交通信号灯、交通诱导屏等交通设备异常状态检测。
+- 制定标注规则并组织人员进行标注；针对目标长宽比特点，设计矩形特征提取模块，提出长宽比约束的 NMS，mAP 提高为 92%。
+- 结合 PTQ/QAT 量化与 TensorRT 加速，部署至 Jetson AGX Xavier，推理速度达到 50 FPS（1280×720）。
+- 基于 Flask 搭建推理服务，支持多进程多 GPU 部署，并通过 Nginx 负载均衡对外提供统一接口。
+</div>
+</div>
+
+- 技术关键词：`Python`、`PyTorch`、`LeRobot`、`π0.5`、`DAgger`、`ROS2`、`TensorRT`、`YOLO`、`PointPillars`、`BEV`、`Transformer`
 
 <span class='anchor' id='honors-and-awards'></span>
 
