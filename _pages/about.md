@@ -55,57 +55,76 @@ redirect_from:
 - 规划侧采用 A* 与 Lattice 实现绕障、会车等能力；轨迹跟踪侧结合改进纯跟踪算法与 MPC，支持车辆在限速 50 km/h 下稳定行驶。
 - 基于 ROS2 搭建智能驾驶系统并完成车端部署与实车调试。
 </div>
-<div class="project-video-gallery">
-  <div class="project-video-item">
+<div class="project-video-showcase" data-video-showcase>
+  <div class="project-video-player">
     <video controls preload="metadata" poster="/images/500x300.png">
       <source src="/files/video/自动驾驶/AD1.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-    <div class="project-video-caption">自动驾驶演示 1</div>
+    <div class="project-video-current">自动驾驶演示 1</div>
   </div>
-  <div class="project-video-item">
-    <video controls preload="metadata" poster="/images/500x300.png">
-      <source src="/files/video/自动驾驶/AD2.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <div class="project-video-caption">自动驾驶演示 2</div>
-  </div>
-  <div class="project-video-item">
-    <video controls preload="metadata" poster="/images/500x300.png">
-      <source src="/files/video/自动驾驶/AD3.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <div class="project-video-caption">自动驾驶演示 3</div>
-  </div>
-  <div class="project-video-item">
-    <video controls preload="metadata" poster="/images/500x300.png">
-      <source src="/files/video/自动驾驶/AD4.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <div class="project-video-caption">自动驾驶演示 4</div>
-  </div>
-  <div class="project-video-item">
-    <video controls preload="metadata" poster="/images/500x300.png">
-      <source src="/files/video/自动驾驶/AD5.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <div class="project-video-caption">自动驾驶演示 5</div>
-  </div>
-  <div class="project-video-item">
-    <video controls preload="metadata" poster="/images/500x300.png">
-      <source src="/files/video/自动驾驶/AD6.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <div class="project-video-caption">自动驾驶演示 6</div>
-  </div>
-  <div class="project-video-item">
-    <video controls preload="metadata" poster="/images/500x300.png">
-      <source src="/files/video/机器人/robot1.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <div class="project-video-caption">机器人演示</div>
+  <div class="project-video-list" aria-label="Project 1 videos">
+    <button class="project-video-tab is-active" type="button" data-video-src="/files/video/自动驾驶/AD1.mp4" aria-pressed="true">
+      <span class="project-video-index">01</span>
+      <span class="project-video-name">自动驾驶演示 1</span>
+    </button>
+    <button class="project-video-tab" type="button" data-video-src="/files/video/自动驾驶/AD2.mp4" aria-pressed="false">
+      <span class="project-video-index">02</span>
+      <span class="project-video-name">自动驾驶演示 2</span>
+    </button>
+    <button class="project-video-tab" type="button" data-video-src="/files/video/自动驾驶/AD3.mp4" aria-pressed="false">
+      <span class="project-video-index">03</span>
+      <span class="project-video-name">自动驾驶演示 3</span>
+    </button>
+    <button class="project-video-tab" type="button" data-video-src="/files/video/自动驾驶/AD4.mp4" aria-pressed="false">
+      <span class="project-video-index">04</span>
+      <span class="project-video-name">自动驾驶演示 4</span>
+    </button>
+    <button class="project-video-tab" type="button" data-video-src="/files/video/自动驾驶/AD5.mp4" aria-pressed="false">
+      <span class="project-video-index">05</span>
+      <span class="project-video-name">自动驾驶演示 5</span>
+    </button>
+    <button class="project-video-tab" type="button" data-video-src="/files/video/自动驾驶/AD6.mp4" aria-pressed="false">
+      <span class="project-video-index">06</span>
+      <span class="project-video-name">自动驾驶演示 6</span>
+    </button>
+    <button class="project-video-tab" type="button" data-video-src="/files/video/机器人/robot1.mp4" aria-pressed="false">
+      <span class="project-video-index">07</span>
+      <span class="project-video-name">机器人演示</span>
+    </button>
   </div>
 </div>
+<script>
+  (function () {
+    var showcases = document.querySelectorAll("[data-video-showcase]");
+    showcases.forEach(function (showcase) {
+      var video = showcase.querySelector("video");
+      var source = showcase.querySelector("source");
+      var current = showcase.querySelector(".project-video-current");
+      var tabs = showcase.querySelectorAll(".project-video-tab");
+
+      tabs.forEach(function (tab) {
+        tab.addEventListener("click", function () {
+          if (tab.classList.contains("is-active")) {
+            return;
+          }
+
+          tabs.forEach(function (item) {
+            item.classList.remove("is-active");
+            item.setAttribute("aria-pressed", "false");
+          });
+
+          tab.classList.add("is-active");
+          tab.setAttribute("aria-pressed", "true");
+          video.pause();
+          source.src = tab.getAttribute("data-video-src");
+          video.load();
+          current.textContent = tab.querySelector(".project-video-name").textContent;
+        });
+      });
+    });
+  }());
+</script>
 </div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Project 2</div><img src='images/500x300.png' alt="project-2" width="100%"></div></div>
