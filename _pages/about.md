@@ -55,6 +55,57 @@ redirect_from:
 - 规划侧采用 A* 与 Lattice 实现绕障、会车等能力；轨迹跟踪侧结合改进纯跟踪算法与 MPC，支持车辆在限速 50 km/h 下稳定行驶。
 - 基于 ROS2 搭建智能驾驶系统并完成车端部署与实车调试。
 </div>
+<div class="project-video-gallery">
+  <div class="project-video-item">
+    <video controls preload="metadata" poster="/images/500x300.png">
+      <source src="/files/video/自动驾驶/AD1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="project-video-caption">自动驾驶演示 1</div>
+  </div>
+  <div class="project-video-item">
+    <video controls preload="metadata" poster="/images/500x300.png">
+      <source src="/files/video/自动驾驶/AD2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="project-video-caption">自动驾驶演示 2</div>
+  </div>
+  <div class="project-video-item">
+    <video controls preload="metadata" poster="/images/500x300.png">
+      <source src="/files/video/自动驾驶/AD3.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="project-video-caption">自动驾驶演示 3</div>
+  </div>
+  <div class="project-video-item">
+    <video controls preload="metadata" poster="/images/500x300.png">
+      <source src="/files/video/自动驾驶/AD4.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="project-video-caption">自动驾驶演示 4</div>
+  </div>
+  <div class="project-video-item">
+    <video controls preload="metadata" poster="/images/500x300.png">
+      <source src="/files/video/自动驾驶/AD5.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="project-video-caption">自动驾驶演示 5</div>
+  </div>
+  <div class="project-video-item">
+    <video controls preload="metadata" poster="/images/500x300.png">
+      <source src="/files/video/自动驾驶/AD6.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="project-video-caption">自动驾驶演示 6</div>
+  </div>
+  <div class="project-video-item">
+    <video controls preload="metadata" poster="/images/500x300.png">
+      <source src="/files/video/机器人/robot1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="project-video-caption">机器人演示</div>
+  </div>
+</div>
 </div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Project 2</div><img src='images/500x300.png' alt="project-2" width="100%"></div></div>
