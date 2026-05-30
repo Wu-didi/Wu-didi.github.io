@@ -105,7 +105,7 @@ redirect_from:
     </button>
     <button class="project-video-tab" type="button" data-video-src="/files/video/自动驾驶/AD5.mp4" aria-pressed="false">
       <span class="project-video-index">05</span>
-      <span class="project-video-name">实车演示 5</span>
+      <span class="project-video-name">遥控车辆</span>
     </button>
     <button class="project-video-tab" type="button" data-video-src="/files/video/自动驾驶/AD6.mp4" aria-pressed="false">
       <span class="project-video-index">06</span>
