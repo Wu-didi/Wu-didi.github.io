@@ -55,7 +55,7 @@ redirect_from:
 </div>
 <div class="project-video-showcase project-video-showcase--single" data-video-showcase>
   <div class="project-video-player">
-    <video controls playsinline preload="metadata" poster="/images/projects/dual-arm-folding.png">
+    <video controls playsinline preload="metadata" poster="/images/projects/dual-arm-folding.png" src="/files/video/机器人/robot1.mp4">
       <source src="/files/video/机器人/robot1.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
@@ -80,7 +80,7 @@ redirect_from:
 </div>
 <div class="project-video-showcase" data-video-showcase>
   <div class="project-video-player">
-    <video controls playsinline preload="metadata" poster="/images/projects/autonomous-mpv.png">
+    <video controls playsinline preload="metadata" poster="/images/projects/autonomous-mpv.png" src="/files/video/自动驾驶/AD1.mp4">
       <source src="/files/video/自动驾驶/AD1.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
@@ -135,8 +135,10 @@ redirect_from:
 
           tab.classList.add("is-active");
           tab.setAttribute("aria-pressed", "true");
+          var nextSrc = tab.getAttribute("data-video-src");
           video.pause();
-          source.src = tab.getAttribute("data-video-src");
+          video.src = nextSrc;
+          source.src = nextSrc;
           video.load();
           current.textContent = tab.querySelector(".project-video-name").textContent;
         });
