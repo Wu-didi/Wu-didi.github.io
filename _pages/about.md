@@ -11,11 +11,11 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-你好，我是 **吴晓宇**。  
+你好，我是 **吴迪**。  
 目前主要关注 **自动驾驶感知**、**多任务学习**、**异常检测**、**轨迹预测** 与 **Vision-Language-Action**。  
 这个主页保留原有的学术展示风格，集中整理我的项目经历、科研成果、教育背景和联系方式。
 
-- 简历下载：[PDF](/files/resume_polished_2026.pdf) ｜ [DOCX](/files/resume_polished_2026.docx)
+- 简历下载：[PDF](/files/resume_2026intern.pdf)
 - 联系方式：`(+86)18811586725` ｜ `164662525@qq.com`
 
 <span class='anchor' id='news'></span>
@@ -24,7 +24,7 @@ redirect_from:
 - *2026.03*: 完成个人主页内容更新，补充教育经历、工作经历、科研成果与代表项目。
 - *2024.03 - 至今*: 在东南大学交通运输专业攻读博士学位，持续研究自动驾驶感知、跟踪、轨迹预测与 VLA。
 - *2023.07 - 2024.01*: 在星宇车灯股份有限公司星宇研究院担任智能驾驶算法工程师，参与实车项目和交通基础设施巡检系统落地。
-- *截至目前*: 已录用 SCI 论文 8 篇，其中一作（含导师一作）4 篇，另有 6 篇期刊论文在审。
+- *截至目前*: 已录用 SCI 论文 8 篇，其中一作（含导师一作）与通讯作者文章 6 篇，另有 4 篇期刊论文在审。
 
 <span class='anchor' id='publications'></span>
 
@@ -33,7 +33,7 @@ redirect_from:
 - **DRMNet**: *A multi-task detection model based on image processing for autonomous driving scenarios*, IEEE Transactions on Vehicular Technology, JCR Q1，二作（导师一作），录用。
 - **UKD-TEAD**: *An Unsupervised Knowledge Distillation Framework for Detecting Anomalies in Traffic Equipment With Various Aspect Ratios*, IEEE Internet of Things Journal, JCR Q1，一作，录用。
 - **MGCDNet**: *A Multi-Task Gradient Covariance Decomposition Network for Panoptic Driving Perception*, IEEE Transactions on Intelligent Transportation Systems, JCR Q1，一作，三审。
-- **UC-Track**: *Uncertainty-aware and Task-coupled 3D Multi-Object Tracking*, IEEE Transactions on Intelligent Transportation Systems, JCR Q1，一作，三审。
+- **UC-Track**: *Uncertainty-aware and Task-coupled 3D Multi-Object Tracking*, IEEE Transactions on Intelligent Transportation Systems, JCR Q1，一作，录用。
 - **VEpred**: *End-to-End Map-Free Trajectory Prediction via Geometry Aware Visual Queries*, Measurement Science and Technology, JCR Q1，共一，录用。
 - **VLM-Guided Deep Reinforcement Learning for Autonomous Driving**: *Using a Vision-Language Model as a Semantic Coach*, IEEE Transactions on Neural Networks and Learning Systems, JCR Q1，一作，在审。
 - **DualVLA**: *Language-Bridged Hierarchical Vision-Language-Action for Long-Tail Autonomous Driving*，进行中。
@@ -201,10 +201,9 @@ redirect_from:
 <span class='anchor' id='technical-skills'></span>
 
 # 🛠 Technical Skills
-- **开发能力**：熟练使用 Python、PyTorch，具备 C++ 工程开发经验；熟练使用 ROS2、Git、Docker、Flask。
-- **算法方向**：熟悉自动驾驶感知、规划、控制、端到端跟踪、轨迹预测、多任务学习、异常检测、强化学习与 VLA。
-- **模型部署**：具备模型后处理、端侧部署与加速能力，熟悉 PTQ/QAT、TensorRT、Orin 与 Jetson AGX Xavier 部署链路。
-- **大模型能力**：具备基于 LoRA 等方法的大模型微调与对齐经验，可用于异常检测解释与多模态任务扩展。
+- **开发能力**：熟练掌握 Python 与 PyTorch 深度学习框架；熟练使用 ROS2、Git、Docker；熟练使用 Codex、Claude Code 等 AI 编程工具。
+- **算法方向**：对自动驾驶感知、规划、控制、端到端算法、VLA 算法与世界模型有深入了解。
+- **模型部署**：具备实车调试和模型工程化落地能力，了解端侧部署与加速链路，熟悉 PTQ/QAT 与 TensorRT。
 
 <span class='anchor' id='work-experience'></span>
 
