@@ -42,7 +42,7 @@ redirect_from:
 
 # 💻 Projects
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Project 1</div><img src='images/500x300.png' alt="dual-arm-robot-folding" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Project 1</div><img src='images/projects/dual-arm-folding.png' alt="dual-arm-robot-folding" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **双臂机器人叠衣任务｜基于 π0.5 的叠衣任务适配与实机验证**
@@ -55,7 +55,7 @@ redirect_from:
 </div>
 <div class="project-video-showcase project-video-showcase--single" data-video-showcase>
   <div class="project-video-player">
-    <video controls playsinline preload="metadata" poster="/images/500x300.png">
+    <video controls playsinline preload="metadata" poster="/images/projects/dual-arm-folding.png">
       <source src="/files/video/机器人/robot1.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
@@ -64,7 +64,7 @@ redirect_from:
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Project 2</div><img src='images/500x300.png' alt="autonomous-driving-mpv" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Project 2</div><img src='images/projects/autonomous-mpv.png' alt="autonomous-driving-mpv" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **校企联合实车项目｜新能源 MPV 智能驾驶算法开发**
@@ -80,7 +80,7 @@ redirect_from:
 </div>
 <div class="project-video-showcase" data-video-showcase>
   <div class="project-video-player">
-    <video controls playsinline preload="metadata" poster="/images/500x300.png">
+    <video controls playsinline preload="metadata" poster="/images/projects/autonomous-mpv.png">
       <source src="/files/video/自动驾驶/AD1.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
@@ -146,7 +146,7 @@ redirect_from:
 </script>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Project 3</div><img src='images/500x300.png' alt="city-memory-driving" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Project 3</div><img src='images/projects/bev-tracking.png' alt="city-memory-driving" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **城市记忆行车｜Transformer 跟踪 Head 设计与集成**
@@ -161,7 +161,7 @@ redirect_from:
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Project 4</div><img src='images/500x300.png' alt="traffic-infrastructure-inspection" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Project 4</div><img src='images/projects/traffic-inspection.png' alt="traffic-infrastructure-inspection" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **交通基础设施智能巡检系统｜异常检测落地**
@@ -208,6 +208,4 @@ redirect_from:
 <span class='anchor' id='work-experience'></span>
 
 # 💼 Work Experience
-- **星宇车灯股份有限公司星宇研究院** ｜ 智能驾驶算法工程师 ｜ 2023.07 - 2024.01
-- 参与智能驾驶算法研发与工程化落地，工作内容覆盖感知、规划、控制、系统集成与上车部署。
-- 支撑校企联合实车项目和交通基础设施巡检项目，具备端侧部署、服务化发布与实车闭环验证经验。
+- **星宇车灯股份有限公司星宇研究院**
