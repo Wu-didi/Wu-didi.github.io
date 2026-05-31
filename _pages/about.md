@@ -12,7 +12,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 你好，我是 **吴迪**。  
-目前主要关注 **自动驾驶感知**、**多任务学习**、**异常检测**、**轨迹预测** 与 **Vision-Language-Action**。  
+目前主要关注 **自动驾驶/具身智能端到端**、**VLA** 与 **世界模型**。  
 这个主页保留原有的学术展示风格，集中整理我的项目经历、科研成果、教育背景和联系方式。
 
 - 简历下载：[PDF](/files/resume_2026intern.pdf)
@@ -21,22 +21,25 @@ redirect_from:
 <span class='anchor' id='news'></span>
 
 # 🔥 News
-- *2026.03*: 完成个人主页内容更新，补充教育经历、工作经历、科研成果与代表项目。
-- *2024.03 - 至今*: 在东南大学交通运输专业攻读博士学位，持续研究自动驾驶感知、跟踪、轨迹预测与 VLA。
-- *2023.07 - 2024.01*: 在星宇车灯股份有限公司星宇研究院担任智能驾驶算法工程师，参与实车项目和交通基础设施巡检系统落地。
-- *截至目前*: 已录用 SCI 论文 8 篇，其中一作（含导师一作）与通讯作者文章 6 篇，另有 4 篇期刊论文在审。
+- *2024.03 - 至今*: 在东南大学交通运输专业攻读博士学位，持续研究自动驾驶/具身智能端到端、VLA 与世界模型。
+- *2023.07 - 2024.01*: 在星宇车灯股份有限公司星宇研究院担任智能驾驶算法工程师，参与 BEV 算法预研。
+- *截至目前*: 已录用 JCR Q1 SCI 论文 6 篇，另有 TRB 会议论文 1 篇、JCR Q1 期刊论文 4 篇在审或审稿中。
 
 <span class='anchor' id='publications'></span>
 
 # 📝 Publications
 
-- **DRMNet**: *A multi-task detection model based on image processing for autonomous driving scenarios*, IEEE Transactions on Vehicular Technology, JCR Q1，二作（导师一作），录用。
-- **UKD-TEAD**: *An Unsupervised Knowledge Distillation Framework for Detecting Anomalies in Traffic Equipment With Various Aspect Ratios*, IEEE Internet of Things Journal, JCR Q1，一作，录用。
-- **MGCDNet**: *A Multi-Task Gradient Covariance Decomposition Network for Panoptic Driving Perception*, IEEE Transactions on Intelligent Transportation Systems, JCR Q1，一作，三审。
-- **UC-Track**: *Uncertainty-aware and Task-coupled 3D Multi-Object Tracking*, IEEE Transactions on Intelligent Transportation Systems, JCR Q1，一作，录用。
-- **VEpred**: *End-to-End Map-Free Trajectory Prediction via Geometry Aware Visual Queries*, Measurement Science and Technology, JCR Q1，共一，录用。
-- **VLM-Guided Deep Reinforcement Learning for Autonomous Driving**: *Using a Vision-Language Model as a Semantic Coach*, IEEE Transactions on Neural Networks and Learning Systems, JCR Q1，一作，在审。
-- **DualVLA**: *Language-Bridged Hierarchical Vision-Language-Action for Long-Tail Autonomous Driving*，进行中。
+1. **UC-Track**: Wu, D., Peng, J., Yu, S., & Ma, C. *Uncertainty-aware and Task-coupled 3D Multi-Object Tracking*. IEEE Transactions on Intelligent Transportation Systems, 2026. JCR Q1，中科院一区 TOP，录用。
+2. **DRMNet**: *A multi-task detection model based on image processing for autonomous driving scenarios*. IEEE Transactions on Vehicular Technology. JCR Q1，二作（导师一作），录用。
+3. **UKD-TEAD**: Wu, D., Peng, J., Yu, S., Ge, Y., Ma, C., & Zhou, J. *An Unsupervised Knowledge Distillation Framework for Detecting Anomalies in Traffic Equipment With Various Aspect Ratios*. IEEE Internet of Things Journal, 2025. JCR Q1，中科院一区 TOP，录用。
+4. **Communication-Efficient Dual-Branch Transmission**: Wu, D., Peng, J., Ge, Y., Yu, S., Xu, K., & Ma, C. *Communication-Efficient Dual-Branch Transmission with Semantic Masks and Quantized Features for V2X Cooperative Perception*. IEEE Internet of Things Journal, 2026. JCR Q1，中科院一区 TOP，录用。
+5. **Graph Channel Receptive Field Transformer**: Peng, J., Wang, J., Zhang, N., Wu, D.*, & Ma, C. *Graph channel receptive field transformer for multi-agent trajectory prediction*. Engineering Applications of Artificial Intelligence. JCR Q1，中科院一区 TOP，通讯作者，录用。
+6. **VEpred**: Yu, S., Wu, D., Li, S., Peng, J., Li, Y., Ge, Y., & Ma, C. *End-to-End Map-Free Trajectory Prediction via Geometry Aware Visual Queries*. Measurement Science and Technology. JCR Q1，共一，录用。
+7. **3D Target Detection**: Wu, D., Peng, J., Yu, S., & Ma, C. *Fusion of image and point cloud data features for 3D target detection*. TRB Annual Meeting. TRB 会议论文。
+8. **MGCDNet**: Wu, D., Peng, J., Yu, S., & Ma, C. *A Multi-Task Gradient Covariance Decomposition Network for Panoptic Driving Perception*. IEEE Transactions on Intelligent Transportation Systems. JCR Q1，中科院一区 TOP，三审。
+9. **SPADet**: Wu, D., Peng, J., Yu, S., & Ma, C. *A Lightweight Shape-Prior-Aware Detector for Traffic-Signal Anomaly Detection*. IEEE Internet of Things Journal. JCR Q1，中科院一区 TOP，二审。
+10. **VLM-Guided Deep Reinforcement Learning for Autonomous Driving**: Wu, D., Peng, J., Yu, S., & Ma, C. *Using a Vision-Language Model as a Semantic Coach*. IEEE Transactions on Neural Networks and Learning Systems. JCR Q1，中科院一区 TOP，在审。
+11. **Trust-Region Cauchy-Step Optimization**: Wu, D., Peng, J., Yu, S., & Ma, C. *Trust-Region Cauchy-Step Optimization for Stable Training of Multi-Task Perception in Intelligent Vehicles*. Engineering Applications of Artificial Intelligence. JCR Q1，中科院一区 TOP，在审。
 
 <span class='anchor' id='projects'></span>
 
