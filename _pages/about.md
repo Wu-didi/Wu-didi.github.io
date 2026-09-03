@@ -45,7 +45,7 @@ redirect_from:
 
 # 💻 Projects
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Project 1</div><img src='images/projects/dual-arm-folding.png' alt="dual-arm-robot-folding" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Project 1</div><img src='images/projects/video-posters/robot1.jpg' alt="双臂机器人叠衣任务实机画面" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **双臂机器人叠衣任务｜基于 π0.5 的叠衣任务适配与实机验证**
@@ -56,9 +56,9 @@ redirect_from:
 - 在 LeRobot 中适配 π0.5 训练 pipeline，复现 training-time RTC 与 DSRL-style latent-space 后训练流程，完成动作 chunk、reward、critic/actor 训练和实机评估模块。
 - 通过 ablation 发现 DSRL 在长程柔性物体任务中收益有限，分析其受 reward 稀疏、critic 估计偏差和 latent-action 对齐误差影响；最终基于 DAgger + RTC 数据闭环将实机成功率提升至 80%，较 GR00T N1.5 baseline 提升约 10%。
 </div>
-<div class="project-video-showcase project-video-showcase--single" data-video-showcase>
+<div class="project-video-showcase project-video-showcase--single">
   <div class="project-video-player">
-    <video controls playsinline preload="metadata" poster="/images/projects/dual-arm-folding.png" src="/files/video/机器人/robot1.mp4">
+    <video controls autoplay muted loop playsinline preload="metadata" poster="/images/projects/video-posters/robot1.jpg" src="/files/video/机器人/robot1.mp4">
       <source src="/files/video/机器人/robot1.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
@@ -67,7 +67,7 @@ redirect_from:
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Project 2</div><img src='images/projects/autonomous-mpv.png' alt="autonomous-driving-mpv" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Project 2</div><img src='images/projects/video-posters/AD2.jpg' alt="新能源 MPV 自动驾驶实车画面" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **校企联合实车项目｜新能源 MPV 智能驾驶算法开发**
@@ -81,74 +81,52 @@ redirect_from:
 - **感知**：使用 YOLO 系列算法完成交通信号灯检测；基于 PointPillars 实现激光雷达 3D 目标检测，并部署到 Orin。
 - **控制**：对纯跟踪算法进行改进使用，并在弯道切换 MPC 算法，完成限速 50 km/h 条件下的实车闭环验证。
 </div>
-<div class="project-video-showcase" data-video-showcase>
-  <div class="project-video-player">
-    <video controls playsinline preload="metadata" poster="/images/projects/autonomous-mpv.png" src="/files/video/自动驾驶/AD1.mp4">
-      <source src="/files/video/自动驾驶/AD1.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <div class="project-video-current">自动驾驶实车演示 1</div>
-  </div>
-  <div class="project-video-list" aria-label="Project 2 videos">
-    <button class="project-video-tab is-active" type="button" data-video-src="/files/video/自动驾驶/AD1.mp4" aria-pressed="true">
-      <span class="project-video-index">01</span>
-      <span class="project-video-name">实车演示 1</span>
-    </button>
-    <button class="project-video-tab" type="button" data-video-src="/files/video/自动驾驶/AD2.mp4" aria-pressed="false">
-      <span class="project-video-index">02</span>
-      <span class="project-video-name">实车演示 2</span>
-    </button>
-    <button class="project-video-tab" type="button" data-video-src="/files/video/自动驾驶/AD3.mp4" aria-pressed="false">
-      <span class="project-video-index">03</span>
-      <span class="project-video-name">实车演示 3</span>
-    </button>
-    <button class="project-video-tab" type="button" data-video-src="/files/video/自动驾驶/AD4.mp4" aria-pressed="false">
-      <span class="project-video-index">04</span>
-      <span class="project-video-name">实车演示 4</span>
-    </button>
-    <button class="project-video-tab" type="button" data-video-src="/files/video/自动驾驶/AD5.mp4" aria-pressed="false">
-      <span class="project-video-index">05</span>
-      <span class="project-video-name">遥控车辆</span>
-    </button>
-    <button class="project-video-tab" type="button" data-video-src="/files/video/自动驾驶/AD6.mp4" aria-pressed="false">
-      <span class="project-video-index">06</span>
-      <span class="project-video-name">实车演示 6</span>
-    </button>
+<div class="project-video-showcase">
+  <div class="project-video-grid">
+    <div class="project-video-player">
+      <video controls autoplay muted loop playsinline preload="metadata" poster="/images/projects/video-posters/AD1.jpg" src="/files/video/自动驾驶/AD1.mp4">
+        <source src="/files/video/自动驾驶/AD1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="project-video-current">实车演示 1</div>
+    </div>
+    <div class="project-video-player">
+      <video controls autoplay muted loop playsinline preload="metadata" poster="/images/projects/video-posters/AD2.jpg" src="/files/video/自动驾驶/AD2.mp4">
+        <source src="/files/video/自动驾驶/AD2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="project-video-current">实车演示 2</div>
+    </div>
+    <div class="project-video-player">
+      <video controls autoplay muted loop playsinline preload="metadata" poster="/images/projects/video-posters/AD3.jpg" src="/files/video/自动驾驶/AD3.mp4">
+        <source src="/files/video/自动驾驶/AD3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="project-video-current">实车演示 3</div>
+    </div>
+    <div class="project-video-player">
+      <video controls autoplay muted loop playsinline preload="metadata" poster="/images/projects/video-posters/AD4.jpg" src="/files/video/自动驾驶/AD4.mp4">
+        <source src="/files/video/自动驾驶/AD4.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="project-video-current">实车演示 4</div>
+    </div>
+    <div class="project-video-player">
+      <video controls autoplay muted loop playsinline preload="metadata" poster="/images/projects/video-posters/AD5.jpg" src="/files/video/自动驾驶/AD5.mp4">
+        <source src="/files/video/自动驾驶/AD5.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="project-video-current">遥控车辆</div>
+    </div>
+    <div class="project-video-player">
+      <video controls autoplay muted loop playsinline preload="metadata" poster="/images/projects/video-posters/AD6.jpg" src="/files/video/自动驾驶/AD6.mp4">
+        <source src="/files/video/自动驾驶/AD6.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="project-video-current">实车演示 6</div>
+    </div>
   </div>
 </div>
-<script>
-  (function () {
-    var showcases = document.querySelectorAll("[data-video-showcase]");
-    showcases.forEach(function (showcase) {
-      var video = showcase.querySelector("video");
-      var source = showcase.querySelector("source");
-      var current = showcase.querySelector(".project-video-current");
-      var tabs = showcase.querySelectorAll(".project-video-tab");
-
-      tabs.forEach(function (tab) {
-        tab.addEventListener("click", function () {
-          if (tab.classList.contains("is-active")) {
-            return;
-          }
-
-          tabs.forEach(function (item) {
-            item.classList.remove("is-active");
-            item.setAttribute("aria-pressed", "false");
-          });
-
-          tab.classList.add("is-active");
-          tab.setAttribute("aria-pressed", "true");
-          var nextSrc = tab.getAttribute("data-video-src");
-          video.pause();
-          video.src = nextSrc;
-          source.src = nextSrc;
-          video.load();
-          current.textContent = tab.querySelector(".project-video-name").textContent;
-        });
-      });
-    });
-  }());
-</script>
 </div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Project 3</div><img src='images/projects/bev-tracking.png' alt="city-memory-driving" width="100%"></div></div>
