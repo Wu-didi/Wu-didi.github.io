@@ -11,9 +11,6 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-你好，我是 **吴迪**。  
-目前主要关注 **自动驾驶/具身智能端到端**、**VLA** 与 **世界模型**。
-
 - 简历下载：[PDF](/files/resume_2026intern.pdf)
 - 联系方式：`(+86)18811586725` ｜ `164662525@qq.com`
 
@@ -35,7 +32,7 @@ redirect_from:
 5. **Graph Channel Receptive Field Transformer**: Peng, J., Wang, J., Zhang, N., Wu, D.*, & Ma, C. *Graph channel receptive field transformer for multi-agent trajectory prediction*. Engineering Applications of Artificial Intelligence. JCR Q1，中科院一区 TOP，通讯作者，录用。
 6. **VEpred**: Yu, S., Wu, D., Li, S., Peng, J., Li, Y., Ge, Y., & Ma, C. *End-to-End Map-Free Trajectory Prediction via Geometry Aware Visual Queries*. Measurement Science and Technology. JCR Q1，共一，录用。
 7. **3D Target Detection**: Wu, D., Peng, J., Yu, S., & Ma, C. *Fusion of image and point cloud data features for 3D target detection*. TRB Annual Meeting. TRB 会议论文。
-8. **MGCDNet**: Wu, D., Peng, J., Yu, S., & Ma, C. *A Multi-Task Gradient Covariance Decomposition Network for Panoptic Driving Perception*. IEEE Transactions on Intelligent Transportation Systems. JCR Q1，中科院一区 TOP，三审。
+8. **MGCDNet**: Wu, D., Peng, J., Yu, S., & Ma, C. *A Multi-Task Gradient Covariance Decomposition Network for Panoptic Driving Perception*. IEEE Transactions on Intelligent Transportation Systems. JCR Q1，中科院一区，IF 9.1，一作。
 9. **SPADet**: Wu, D., Peng, J., Yu, S., & Ma, C. *A Lightweight Shape-Prior-Aware Detector for Traffic-Signal Anomaly Detection*. IEEE Internet of Things Journal. JCR Q1，中科院一区 TOP，二审。
 10. **VLM-Guided Deep Reinforcement Learning for Autonomous Driving**: Wu, D., Peng, J., Yu, S., & Ma, C. *Using a Vision-Language Model as a Semantic Coach*. IEEE Transactions on Neural Networks and Learning Systems. JCR Q1，中科院一区 TOP，在审。
 11. **Trust-Region Cauchy-Step Optimization**: Wu, D., Peng, J., Yu, S., & Ma, C. *Trust-Region Cauchy-Step Optimization for Stable Training of Multi-Task Perception in Intelligent Vehicles*. Engineering Applications of Artificial Intelligence. JCR Q1，中科院一区 TOP，在审。
