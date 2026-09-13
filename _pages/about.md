@@ -21,7 +21,7 @@ redirect_from:
 - *2026.06 - 2026.09*: 在魔法原子担任具身智能算法实习生，参与推理优化加速、Demo 成功率优化工作。
 - *2024.03 - 至今*: 在东南大学交通运输专业攻读博士学位，持续研究自动驾驶/具身智能端到端、VLA 与世界模型。
 - *2023.07 - 2024.01*: 在星宇车灯股份有限公司星宇研究院担任智能驾驶算法工程师，参与 BEV 算法预研。
-- *截至目前*: 已录用 JCR Q1 SCI 论文 6 篇，另有 TRB 会议论文 1 篇、JCR Q1 期刊论文 4 篇在审或审稿中。
+- *截至目前*: 已录用 JCR Q1 SCI 论文 7 篇，另有 TRB 会议论文 1 篇、JCR Q1 期刊论文 3 篇在审或审稿中。
 
 <span class='anchor' id='publications'></span>
 
@@ -35,7 +35,7 @@ redirect_from:
 6. **VEpred**: Yu, S., Wu, D., Li, S., Peng, J., Li, Y., Ge, Y., & Ma, C. *End-to-End Map-Free Trajectory Prediction via Geometry Aware Visual Queries*. Measurement Science and Technology. JCR Q1，共一，录用。
 7. **3D Target Detection**: Wu, D., Peng, J., Yu, S., & Ma, C. *Fusion of image and point cloud data features for 3D target detection*. TRB Annual Meeting. TRB 会议论文。
 8. **MGCDNet**: Wu, D., Peng, J., Yu, S., & Ma, C. *A Multi-Task Gradient Covariance Decomposition Network for Panoptic Driving Perception*. IEEE Transactions on Intelligent Transportation Systems. JCR Q1，中科院一区，IF 9.1，一作。
-9. **SPADet**: Wu, D., Peng, J., Yu, S., & Ma, C. *A Lightweight Shape-Prior-Aware Detector for Traffic-Signal Anomaly Detection*. IEEE Internet of Things Journal. JCR Q1，中科院一区 TOP，二审。
+9. **SPADet**: Wu, D., Peng, J., Yu, S., & Ma, C. *A Lightweight Shape-Prior-Aware Detector for Traffic-Signal Anomaly Detection*. IEEE Internet of Things Journal. JCR Q1，中科院一区 TOP，录用。
 10. **VLM-Guided Deep Reinforcement Learning for Autonomous Driving**: Wu, D., Peng, J., Yu, S., & Ma, C. *Using a Vision-Language Model as a Semantic Coach*. IEEE Transactions on Neural Networks and Learning Systems. JCR Q1，中科院一区 TOP，在审。
 11. **Trust-Region Cauchy-Step Optimization**: Wu, D., Peng, J., Yu, S., & Ma, C. *Trust-Region Cauchy-Step Optimization for Stable Training of Multi-Task Perception in Intelligent Vehicles*. Engineering Applications of Artificial Intelligence. JCR Q1，中科院一区 TOP，在审。
 
