@@ -12,7 +12,8 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 - 简历下载：[PDF](/files/resume_2026intern.pdf)
-- 联系方式：`(+86)18811586725` ｜ `164662525@qq.com`
+- 联系方式：`(+86)18811586725` ｜ [164662525@qq.com](mailto:164662525@qq.com)
+- GitHub：[wu-didi](https://github.com/wu-didi)
 
 <span class='anchor' id='news'></span>
 
@@ -42,7 +43,7 @@ redirect_from:
 
 # 💻 Projects
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Project 1</div><img src='images/projects/video-posters/robot1.jpg' alt="双臂机器人叠衣任务实机画面" width="100%"></div></div>
+<div class='paper-box' id='project-folding'><div class='paper-box-image'><div><div class="badge">Project 1</div><img src='images/projects/video-posters/robot1.jpg' alt="双臂机器人叠衣任务实机画面" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **双臂机器人叠衣任务｜基于 π0.5 的叠衣任务适配与实机验证**
@@ -64,7 +65,7 @@ redirect_from:
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Project 2</div><img src='images/projects/video-posters/AD2.jpg' alt="新能源 MPV 自动驾驶实车画面" width="100%"></div></div>
+<div class='paper-box' id='project-mpv'><div class='paper-box-image'><div><div class="badge">Project 2</div><img src='images/projects/video-posters/AD2.jpg' alt="新能源 MPV 自动驾驶实车画面" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **校企联合实车项目｜新能源 MPV 智能驾驶算法开发**
@@ -126,12 +127,12 @@ redirect_from:
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Project 3</div><img src='images/projects/bev-tracking.png' alt="city-memory-driving" width="100%"></div></div>
+<div class='paper-box' id='project-city-memory'><div class='paper-box-image'><div><div class="badge">Project 3</div><img src='images/projects/bev-tracking.png' alt="city-memory-driving" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **城市记忆行车｜Transformer 跟踪 Head 设计与集成**
 
-**时间**：2024 - 至今
+**时间**：2023.08 - 2024.01
 
 - 负责基于 Transformer 的端到端跟踪 head 搭建，并集成到 BEV 感知框架中，实现检测、跟踪、预测的联合建模与时序关联。
 - 设计不确定性感知 Query 生成模块：基于目标置信度生成查询向量，使关联与状态更新对低置信、噪声观测更稳定。
@@ -141,12 +142,12 @@ redirect_from:
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Project 4</div><img src='images/projects/traffic-inspection.png' alt="traffic-infrastructure-inspection" width="100%"></div></div>
+<div class='paper-box' id='project-inspection'><div class='paper-box-image'><div><div class="badge">Project 4</div><img src='images/projects/traffic-inspection.png' alt="traffic-infrastructure-inspection" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **交通基础设施智能巡检系统｜异常检测落地**
 
-**时间**：2023 - 2024
+**时间**：2024.05 - 2025.06
 
 - 基于道路巡检数据以及交通电子警察数据，实现交通信号灯、交通诱导屏等交通设备异常状态检测。
 - 制定标注规则并组织人员进行标注；针对目标长宽比特点，设计矩形特征提取模块，提出长宽比约束的 NMS，mAP 提高为 92%。
