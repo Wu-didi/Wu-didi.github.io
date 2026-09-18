@@ -27,7 +27,7 @@ redirect_from:
 
 # 📝 Publications
 
-**论文概况（截至 2026 年 9 月）**：共发表论文 13 篇，包括 SCI 期刊论文 12 篇和 TRB 会议论文 1 篇；其中第一作者 6 篇、共同第一作者 1 篇、通讯作者 1 篇。
+**论文概况（截至 2026 年 9 月）**：共发表论文 13 篇，包括 SCI 期刊论文 12 篇和 TRB 会议论文 1 篇；其中第一作者 7 篇、共同第一作者 1 篇、通讯作者 1 篇。
 
 ## 已发表/录用论文（第一作者、共同第一作者及通讯作者）
 
@@ -41,11 +41,13 @@ redirect_from:
    **JCR Q1｜中科院一区 TOP｜一作｜已发表**
 5. **D. Wu**, J. Zhao, and Z. Yu, “3D Object Detection Based on Fusion of Image and Point Cloud in Autonomous Driving Traffic Scenarios,” *Multimedia Tools and Applications*, vol. 84, no. 20, pp. 23259–23277, 2025. [[DOI](https://doi.org/10.1007/s11042-024-19399-y)]<br>
    **SCI 期刊论文｜一作｜已发表**
-6. S. Yu, **D. Wu**, S. Li, J. Peng, Y. Li, Y. Ge, and C. Ma, “VEpred: End-to-End Map-Free Trajectory Prediction via Geometry Aware Visual Queries,” *Measurement Science and Technology*, vol. 37, no. 10, Art. no. 105106, 2026. [[DOI](https://doi.org/10.1088/1361-6501/ae4dda)]<br>
+6. J. Zhao, **D. Wu**, Z. Yu, and Z. Gao, “DRMNet: A Multi-Task Detection Model Based on Image Processing for Autonomous Driving Scenarios,” *IEEE Transactions on Vehicular Technology*, vol. 72, no. 12, pp. 15341–15355, 2023. [[DOI](https://doi.org/10.1109/TVT.2023.3296735)]<br>
+   **JCR Q1｜一作（导师一作）｜已发表**
+7. S. Yu, **D. Wu**, S. Li, J. Peng, Y. Li, Y. Ge, and C. Ma, “VEpred: End-to-End Map-Free Trajectory Prediction via Geometry Aware Visual Queries,” *Measurement Science and Technology*, vol. 37, no. 10, Art. no. 105106, 2026. [[DOI](https://doi.org/10.1088/1361-6501/ae4dda)]<br>
    **JCR Q1｜共同一作｜已发表**
-7. J. Peng, J. Wang, N. Zhang, **D. Wu**, and C. Ma, “Graph Channel Receptive Field Transformer for Multi-Agent Trajectory Prediction,” *Engineering Applications of Artificial Intelligence*, vol. 176, Art. no. 114748, 2026. [[DOI](https://doi.org/10.1016/j.engappai.2026.114748)]<br>
+8. J. Peng, J. Wang, N. Zhang, **D. Wu**, and C. Ma, “Graph Channel Receptive Field Transformer for Multi-Agent Trajectory Prediction,” *Engineering Applications of Artificial Intelligence*, vol. 176, Art. no. 114748, 2026. [[DOI](https://doi.org/10.1016/j.engappai.2026.114748)]<br>
    **JCR Q1｜中科院一区 TOP｜通讯作者｜已发表**
-8. **D. Wu**, J. Peng, S. Yu, and C. Ma, “Fusion of Image and Point Cloud Data Features for 3D Target Detection,” *Transportation Research Board Annual Meeting*.<br>
+9. **D. Wu**, J. Peng, S. Yu, and C. Ma, “Fusion of Image and Point Cloud Data Features for 3D Target Detection,” *Transportation Research Board Annual Meeting*.<br>
    **TRB 会议论文｜一作｜已发表**
 
 ## 在投/在审论文
@@ -59,15 +61,13 @@ redirect_from:
 
 ## 其他已发表论文
 
-1. J. Zhao, **D. Wu**, Z. Yu, and Z. Gao, “DRMNet: A Multi-Task Detection Model Based on Image Processing for Autonomous Driving Scenarios,” *IEEE Transactions on Vehicular Technology*, vol. 72, no. 12, pp. 15341–15355, 2023. [[DOI](https://doi.org/10.1109/TVT.2023.3296735)]<br>
-   **JCR Q1｜二作（导师一作）｜已发表**
-2. Z. Yu, J. Zhao, R. Jiang, J. Shen, **D. Wu**, and S. Zheng, “Theory-Data Dual Driven Car Following Model in Traffic Flow Mixed of AVs and HDVs,” *Transportation Research Part C: Emerging Technologies*, vol. 165, Art. no. 104747, 2024. [[DOI](https://doi.org/10.1016/j.trc.2024.104747)]<br>
+1. Z. Yu, J. Zhao, R. Jiang, J. Shen, **D. Wu**, and S. Zheng, “Theory-Data Dual Driven Car Following Model in Traffic Flow Mixed of AVs and HDVs,” *Transportation Research Part C: Emerging Technologies*, vol. 165, Art. no. 104747, 2024. [[DOI](https://doi.org/10.1016/j.trc.2024.104747)]<br>
    **SCI 期刊论文｜第五作者｜已发表**
-3. J. Zhou, J. Peng, S. Yu, Y. Fan, H. Zhang, and **D. Wu**, “Toward Ecological Decision-Making on Highways: A Multiobjective Eco-Driving Framework for Connected FCHEVs via Offline-to-Online Reinforcement Learning,” *IEEE Transactions on Transportation Electrification*, vol. 12, no. 1, pp. 440–452, 2026. [[DOI](https://doi.org/10.1109/TTE.2025.3615972)]<br>
+2. J. Zhou, J. Peng, S. Yu, Y. Fan, H. Zhang, and **D. Wu**, “Toward Ecological Decision-Making on Highways: A Multiobjective Eco-Driving Framework for Connected FCHEVs via Offline-to-Online Reinforcement Learning,” *IEEE Transactions on Transportation Electrification*, vol. 12, no. 1, pp. 440–452, 2026. [[DOI](https://doi.org/10.1109/TTE.2025.3615972)]<br>
    **SCI 期刊论文｜第六作者｜已发表**
-4. J. Zhao, Z. Yu, R. Jiang, **D. Wu**, and S. Zheng, “Car Following Trajectory Planning of CAVs: An Improved APF Model With Considering the Stochasticity of HDVs,” *Physica A: Statistical Mechanics and its Applications*, vol. 658, Art. no. 130265, 2025. [[DOI](https://doi.org/10.1016/j.physa.2024.130265)]<br>
+3. J. Zhao, Z. Yu, R. Jiang, **D. Wu**, and S. Zheng, “Car Following Trajectory Planning of CAVs: An Improved APF Model With Considering the Stochasticity of HDVs,” *Physica A: Statistical Mechanics and its Applications*, vol. 658, Art. no. 130265, 2025. [[DOI](https://doi.org/10.1016/j.physa.2024.130265)]<br>
    **SCI 期刊论文｜第四作者｜已发表**
-5. S. Yu, J. Peng, S. Wang, **D. Wu**, and C. Ma, “Feature-Level Vehicle-Infrastructure Cooperative Perception With Adaptive Fusion for 3D Object Detection,” *Smart Cities*, vol. 8, no. 5, Art. no. 171, 2025. [[DOI](https://doi.org/10.3390/smartcities8050171)]<br>
+4. S. Yu, J. Peng, S. Wang, **D. Wu**, and C. Ma, “Feature-Level Vehicle-Infrastructure Cooperative Perception With Adaptive Fusion for 3D Object Detection,” *Smart Cities*, vol. 8, no. 5, Art. no. 171, 2025. [[DOI](https://doi.org/10.3390/smartcities8050171)]<br>
    **SCI 期刊论文｜第四作者｜已发表**
 
 <span class='anchor' id='projects'></span>
