@@ -27,6 +27,8 @@ redirect_from:
 
 # 📝 Publications
 
+**论文概况（截至 2026 年 9 月）**：共发表论文 8 篇，包括 SCI 期刊论文 7 篇和 TRB 会议论文 1 篇；其中第一作者 5 篇、共同第一作者 1 篇、通讯作者 1 篇。
+
 1. **D. Wu**, J. Peng, S. Yu, K. Xu, Z. Chen, and C. Ma, “UC-Track: Uncertainty-Aware and Task-Coupled 3-D Multi-Object Tracking,” *IEEE Transactions on Intelligent Transportation Systems*, vol. 27, no. 9, pp. 10825–10839, 2026. [[DOI](https://doi.org/10.1109/TITS.2026.3687222)]<br>
    **JCR Q1｜中科院一区 TOP｜一作｜已发表**
 2. J. Zhao, **D. Wu**, Z. Yu, and Z. Gao, “DRMNet: A Multi-Task Detection Model Based on Image Processing for Autonomous Driving Scenarios,” *IEEE Transactions on Vehicular Technology*, vol. 72, no. 12, pp. 15341–15355, 2023. [[DOI](https://doi.org/10.1109/TVT.2023.3296735)]<br>
