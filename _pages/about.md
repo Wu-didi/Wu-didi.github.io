@@ -11,7 +11,6 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-- 简历下载：[PDF](/files/resume_2026intern.pdf)
 - 联系方式：`(+86)18811586725` ｜ [164662525@qq.com](mailto:164662525@qq.com)
 - GitHub：[wu-didi](https://github.com/wu-didi)
 
