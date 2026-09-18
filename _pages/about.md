@@ -21,13 +21,13 @@ redirect_from:
 - *2026.06 - 2026.09*: 在魔法原子担任具身智能算法实习生，参与推理优化加速、Demo 成功率优化工作。
 - *2024.03 - 至今*: 在东南大学交通运输专业攻读博士学位，持续研究自动驾驶/具身智能端到端、VLA 与世界模型。
 - *2023.07 - 2024.01*: 在星宇车灯股份有限公司星宇研究院担任智能驾驶算法工程师，参与 BEV 算法预研。
-- *截至目前*: 已录用 JCR Q1 SCI 论文 7 篇，另有 TRB 会议论文 1 篇、JCR Q1 期刊论文 3 篇在审或审稿中。
+- *截至目前*: 已发表 SCI 期刊论文 12 篇，另有 TRB 会议论文 1 篇、JCR Q1 期刊论文 3 篇在审或审稿中。
 
 <span class='anchor' id='publications'></span>
 
 # 📝 Publications
 
-**论文概况（截至 2026 年 9 月）**：共发表论文 8 篇，包括 SCI 期刊论文 7 篇和 TRB 会议论文 1 篇；其中第一作者 5 篇、共同第一作者 1 篇、通讯作者 1 篇。
+**论文概况（截至 2026 年 9 月）**：共发表论文 13 篇，包括 SCI 期刊论文 12 篇和 TRB 会议论文 1 篇；其中第一作者 6 篇、共同第一作者 1 篇、通讯作者 1 篇。
 
 1. **D. Wu**, J. Peng, S. Yu, K. Xu, Z. Chen, and C. Ma, “UC-Track: Uncertainty-Aware and Task-Coupled 3-D Multi-Object Tracking,” *IEEE Transactions on Intelligent Transportation Systems*, vol. 27, no. 9, pp. 10825–10839, 2026. [[DOI](https://doi.org/10.1109/TITS.2026.3687222)]<br>
    **JCR Q1｜中科院一区 TOP｜一作｜已发表**
@@ -47,9 +47,19 @@ redirect_from:
    **JCR Q1｜中科院一区｜IF 9.1｜一作**
 9. **D. Wu**, J. Peng, S. Yu, K. Xu, Y. Ge, and C. Ma, “SPADet: A Lightweight Shape-Prior-Aware Framework for Traffic-Signal Anomaly Detection in Smart Cities,” *IEEE Internet of Things Journal*, vol. 13, no. 18, pp. 42761–42774, 2026. [[DOI](https://doi.org/10.1109/JIOT.2026.3711500)]<br>
    **JCR Q1｜中科院一区 TOP｜一作｜已发表**
-10. **D. Wu**, J. Peng, S. Yu, and C. Ma, “Using a Vision-Language Model as a Semantic Coach,” *IEEE Transactions on Neural Networks and Learning Systems*, under review.<br>
+10. Z. Yu, J. Zhao, R. Jiang, J. Shen, **D. Wu**, and S. Zheng, “Theory-Data Dual Driven Car Following Model in Traffic Flow Mixed of AVs and HDVs,” *Transportation Research Part C: Emerging Technologies*, vol. 165, Art. no. 104747, 2024. [[DOI](https://doi.org/10.1016/j.trc.2024.104747)]<br>
+    **SCI 期刊论文｜第五作者｜已发表**
+11. J. Zhou, J. Peng, S. Yu, Y. Fan, H. Zhang, and **D. Wu**, “Toward Ecological Decision-Making on Highways: A Multiobjective Eco-Driving Framework for Connected FCHEVs via Offline-to-Online Reinforcement Learning,” *IEEE Transactions on Transportation Electrification*, vol. 12, no. 1, pp. 440–452, 2026. [[DOI](https://doi.org/10.1109/TTE.2025.3615972)]<br>
+    **SCI 期刊论文｜第六作者｜已发表**
+12. J. Zhao, Z. Yu, R. Jiang, **D. Wu**, and S. Zheng, “Car Following Trajectory Planning of CAVs: An Improved APF Model With Considering the Stochasticity of HDVs,” *Physica A: Statistical Mechanics and its Applications*, vol. 658, Art. no. 130265, 2025. [[DOI](https://doi.org/10.1016/j.physa.2024.130265)]<br>
+    **SCI 期刊论文｜第四作者｜已发表**
+13. S. Yu, J. Peng, S. Wang, **D. Wu**, and C. Ma, “Feature-Level Vehicle-Infrastructure Cooperative Perception With Adaptive Fusion for 3D Object Detection,” *Smart Cities*, vol. 8, no. 5, Art. no. 171, 2025. [[DOI](https://doi.org/10.3390/smartcities8050171)]<br>
+    **SCI 期刊论文｜第四作者｜已发表**
+14. **D. Wu**, J. Zhao, and Z. Yu, “3D Object Detection Based on Fusion of Image and Point Cloud in Autonomous Driving Traffic Scenarios,” *Multimedia Tools and Applications*, vol. 84, no. 20, pp. 23259–23277, 2025. [[DOI](https://doi.org/10.1007/s11042-024-19399-y)]<br>
+    **SCI 期刊论文｜一作｜已发表**
+15. **D. Wu**, J. Peng, S. Yu, and C. Ma, “Using a Vision-Language Model as a Semantic Coach,” *IEEE Transactions on Neural Networks and Learning Systems*, under review.<br>
     **JCR Q1｜中科院一区 TOP｜一作｜在审**
-11. **D. Wu**, J. Peng, S. Yu, and C. Ma, “Trust-Region Cauchy-Step Optimization for Stable Training of Multi-Task Perception in Intelligent Vehicles,” *Engineering Applications of Artificial Intelligence*, under review.<br>
+16. **D. Wu**, J. Peng, S. Yu, and C. Ma, “Trust-Region Cauchy-Step Optimization for Stable Training of Multi-Task Perception in Intelligent Vehicles,” *Engineering Applications of Artificial Intelligence*, under review.<br>
     **JCR Q1｜中科院一区 TOP｜一作｜在审**
 
 <span class='anchor' id='projects'></span>
