@@ -73,27 +73,16 @@ redirect_from:
 
 # 💻 Projects
 
-<div class='paper-box paper-box--text-only' id='project-vla-inference'>
+<div class='paper-box' id='project-folding'><div class='paper-box-image'><div><div class="badge">Project 1</div><img src='images/projects/video-posters/robot1.jpg' alt="双臂机器人叠衣任务实机画面" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-<span class="project-label">Project 1</span>
+**双臂机器人叠衣任务｜基于 π0.5 的叠衣任务适配与实机验证**
 
-**VLA 真机推理优化｜Flow Matching 少步采样与跨 Chunk 连续性**
-
-- **背景与目标**：面向 Flow Matching-based Policy 的多步采样时延与跨动作序列连续性问题，系统评测 VLASH、LeGATO、RTC、TT-RTC、Temporal Smoothing 等优化方法。
-- **少步采样**：提出两步非等间隔采样策略，首阶段大步推进 flow trajectory，次阶段结合 SnapFlow 精细推理，以更少采样步数完成动作生成。
-- **连续性优化**：提出 Correlated Noise Initialization，在 Action Chunk 时间维度引入相关性约束，提升动作时序连续性并降低轨迹 jerk；相关论文在投 ICRA 2027。
-- **工程化**：开发分布式机器人推理框架，解耦模型推理与 Action 发布端，设计统一接口并集成多类优化算法。[[Code](https://github.com/MagiclabRobotics/Inference)]
-</div>
-</div>
-
-<div class='paper-box' id='project-folding'><div class='paper-box-image'><div><div class="badge">Project 2</div><img src='images/projects/video-posters/robot1.jpg' alt="χ0 双臂机器人叠衣任务实机画面" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-**χ0 双臂叠衣任务优化｜长程柔性物体操作**
-
-- **数据与策略**：联合遥操作数据与 DAgger 数据训练，针对长程执行中的重复 Retry、抓取位置不准等失败模式，引入 RLToken 优化精细操作。
-- **真机结果**：叠衣成功率达 **100%**，完成时间由 **75 s 降至 48 s（下降 36%）**，并在 WAIC / WRC 2026 现场展示。[[Demo](https://weixin.qq.com/sph/A4X6oYQoUt)]
+- 基于 Koch v1.1 双臂机器人与 π0.5 具身基础策略，完成柔性物体叠衣任务的数据采集、训练流程复现、优化与实机闭环验证。
+- 采集 750 条专家演示 episode，覆盖抓取、展开、对齐、折叠等关键阶段，构建面向双臂协同操作的真实机器人模仿学习数据集。
+- 基于实机 rollout 结果，针对抓取偏移、衣物滑落等失败模式，采用 DAgger 迭代纠偏补充 500 条 episode，缓解策略分布偏移。
+- 在 LeRobot 中适配 π0.5 训练 pipeline，复现 training-time RTC 与 DSRL-style latent-space 后训练流程，完成动作 chunk、reward、critic/actor 训练和实机评估模块。
+- 通过 ablation 发现 DSRL 在长程柔性物体任务中收益有限，分析其受 reward 稀疏、critic 估计偏差和 latent-action 对齐误差影响；最终基于 DAgger + RTC 数据闭环将实机成功率提升至 80%，较 GR00T N1.5 baseline 提升约 10%。
 </div>
 <div class="project-video-showcase project-video-showcase--single">
   <div class="project-video-player">
@@ -106,21 +95,7 @@ redirect_from:
 </div>
 </div>
 
-<div class='paper-box paper-box--text-only' id='project-ctp'>
-<div class='paper-box-text' markdown="1">
-
-<span class="project-label">Project 3</span>
-
-**Conditional Trajectory Peaks（CTP）｜Single-Pass Action Chunk Policy**
-
-- **背景与目标**：针对 Diffusion / Flow Matching 策略多步生成导致的推理延迟，构建 Trajectory-level Gaussian Mixture 动作策略，单次前向联合预测 Action Chunk、模式概率与分布尺度。
-- **关键方法**：提出 DAPS，以后验责任分配与概率/尺度感知重叠约束缓解 Mode Collapse；设计 ETBT，通过跨 Replanning 轨迹匹配与 Belief Transport 抑制模式切换。
-- **系统验证**：集成至 π0.5 VLA；Push-T 成功率 **91.40%**、LIBERO 40-task 成功率 **97.25%**，真实双模态放置 **50/50** 成功并保留两种行为模式。
-- **推理效率**：实现 NFE=1 闭环控制，策略时延由 **218.24 ms 降至 75.80 ms**，提升 **2.88×**；相关论文在投 ICRA 2027。
-</div>
-</div>
-
-<div class='paper-box' id='project-mpv'><div class='paper-box-image'><div><div class="badge">Project 4</div><img src='images/projects/video-posters/AD2.jpg' alt="新能源 MPV 自动驾驶实车画面" width="100%"></div></div>
+<div class='paper-box' id='project-mpv'><div class='paper-box-image'><div><div class="badge">Project 2</div><img src='images/projects/video-posters/AD2.jpg' alt="新能源 MPV 自动驾驶实车画面" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **校企联合实车项目｜新能源 MPV 智能驾驶算法开发**
@@ -182,7 +157,7 @@ redirect_from:
 </div>
 </div>
 
-<div class='paper-box' id='project-city-memory'><div class='paper-box-image'><div><div class="badge">Project 5</div><img src='images/projects/bev-tracking.png' alt="BEV 感知与 Transformer 跟踪 Head 示意图" width="100%"></div></div>
+<div class='paper-box' id='project-city-memory'><div class='paper-box-image'><div><div class="badge">Project 3</div><img src='images/projects/bev-tracking.png' alt="city-memory-driving" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **城市记忆行车｜Transformer 跟踪 Head 设计与集成**
@@ -197,7 +172,7 @@ redirect_from:
 </div>
 </div>
 
-<div class='paper-box' id='project-inspection'><div class='paper-box-image'><div><div class="badge">Project 6</div><img src='images/projects/traffic-inspection.png' alt="交通基础设施异常检测与智能巡检示意图" width="100%"></div></div>
+<div class='paper-box' id='project-inspection'><div class='paper-box-image'><div><div class="badge">Project 4</div><img src='images/projects/traffic-inspection.png' alt="traffic-infrastructure-inspection" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **交通基础设施智能巡检系统｜异常检测落地**
@@ -211,7 +186,7 @@ redirect_from:
 </div>
 </div>
 
-- 技术关键词：`Python`、`PyTorch`、`VLA`、`Flow Matching`、`Action Chunk`、`π0.5`、`χ0`、`RLToken`、`DAgger`、`ROS2`、`TensorRT`、`PointPillars`、`BEV`、`Transformer`
+- 技术关键词：`Python`、`PyTorch`、`LeRobot`、`π0.5`、`DAgger`、`ROS2`、`TensorRT`、`YOLO`、`PointPillars`、`BEV`、`Transformer`
 
 <span class='anchor' id='honors-and-awards'></span>
 
