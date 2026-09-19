@@ -109,6 +109,27 @@ h1:before, .anchor:before {
     font-size: .8em;
 }
 
+.paper-box--text-only {
+    align-items: flex-start;
+
+    .paper-box-text {
+        max-width: 100%;
+        padding-left: 0;
+    }
+}
+
+.project-label {
+    display: inline-block;
+    margin-bottom: .75rem;
+    padding: .3rem .75rem;
+    border-radius: 999px;
+    color: #fff;
+    background: #00369f;
+    font-size: .8em;
+    font-weight: 700;
+    line-height: 1;
+}
+
 .project-video-showcase {
     width: 100%;
     order: 3;
