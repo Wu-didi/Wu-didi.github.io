@@ -9,6 +9,12 @@ main:
   - title: "论文发表"
     url: "/#publications"
 
+  - title: "实习经历"
+    url: "/#internship-experience"
+
+  - title: "具身智能研究"
+    url: "/#embodied-ai-research"
+
   - title: "项目经历"
     url: "/#projects"
 
@@ -18,8 +24,5 @@ main:
   - title: "教育经历"
     url: "/#educations"
 
-  - title: "专业技能"
+  - title: "技术栈"
     url: "/#technical-skills"
-
-  - title: "工作经历"
-    url: "/#work-experience"

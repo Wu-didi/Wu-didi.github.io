@@ -11,24 +11,23 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-- 联系方式：`(+86)18811586725` ｜ [164662525@qq.com](mailto:164662525@qq.com)
-- GitHub：[wu-didi](https://github.com/wu-didi)
-
 <span class='anchor' id='news'></span>
 
 # 🔥 News
 - *2026.06 - 2026.10*: 在魔法原子担任具身智能算法实习生，参与推理优化加速、Demo 成功率优化工作。
 - *2024.03 - 至今*: 在东南大学交通运输专业攻读博士学位，持续研究自动驾驶/具身智能端到端、VLA 与世界模型。
 - *2023.07 - 2024.01*: 在星宇车灯股份有限公司星宇研究院担任智能驾驶算法工程师，参与 BEV 算法预研。
-- *截至目前*: 已发表 SCI 期刊论文 12 篇，另有 TRB 会议论文 1 篇、JCR Q1 期刊论文 3 篇在审或审稿中。
+- *截至 2026 年 9 月*: 共发表/录用论文 **13 篇**（SCI 期刊论文 12 篇、TRB 会议论文 1 篇）；另有在审论文 5 篇，包括 JCR Q1 期刊论文 3 篇和 ICRA 2027 论文 2 篇。
 
 <span class='anchor' id='publications'></span>
 
 # 📝 Publications
 
-**论文概况（截至 2026 年 9 月）**：共发表论文 13 篇，包括 SCI 期刊论文 12 篇和 TRB 会议论文 1 篇；其中第一作者 7 篇、共同第一作者 1 篇、通讯作者 1 篇。
+**论文概况（截至 2026 年 9 月）**：共发表/录用论文 **13 篇**（SCI 期刊论文 12 篇、TRB 会议论文 1 篇）；其中第一作者 7 篇、共同第一作者 1 篇、通讯作者 1 篇。另有在审论文 5 篇，包括 JCR Q1 期刊论文 3 篇和 ICRA 2027 论文 2 篇。
 
-## 已发表/录用论文（第一作者、共同第一作者及通讯作者）
+## 已发表/录用论文（共 13 篇）
+
+**第一作者、共同第一作者及通讯作者**
 
 1. **D. Wu**, J. Peng, S. Yu, K. Xu, Z. Chen, and C. Ma, “UC-Track: Uncertainty-Aware and Task-Coupled 3-D Multi-Object Tracking,” *IEEE Transactions on Intelligent Transportation Systems*, vol. 27, no. 9, pp. 10825–10839, 2026. [[DOI](https://doi.org/10.1109/TITS.2026.3687222)]<br>
    **JCR Q1｜中科院一区 TOP｜一作｜已发表**
@@ -51,6 +50,15 @@ redirect_from:
 
 ## 在投/在审论文
 
+1. **D. Wu et al.**, “Conditional Trajectory Peaks: Single-Pass Multimodal Policies over Action Chunks,” *IEEE International Conference on Robotics and Automation (ICRA)*, under review, 2027. [[Project](#research-ctp)]<br>
+   **ICRA 2027｜一作｜在审**
+2. **D. Wu et al.**, “Execution-Aligned Progressive Noise for Consistent Asynchronous Replanning in Generative Robot Policies,” *IEEE International Conference on Robotics and Automation (ICRA)*, under review, 2027. [[Project](#research-eapn)]<br>
+   **ICRA 2027｜一作｜在审**
+
+<details class="publication-fold">
+<summary>其他在投/在审论文（3 篇）</summary>
+<div class="publication-fold__content" markdown="1">
+
 1. **D. Wu**, J. Peng, S. Yu, and C. Ma, “A Multi-Task Gradient Covariance Decomposition Network for Panoptic Driving Perception,” *IEEE Transactions on Intelligent Transportation Systems*, under review.<br>
    **JCR Q1｜中科院一区｜IF 9.1｜一作｜在审**
 2. **D. Wu**, J. Peng, S. Yu, and C. Ma, “Using a Vision-Language Model as a Semantic Coach,” *IEEE Transactions on Neural Networks and Learning Systems*, under review.<br>
@@ -58,7 +66,12 @@ redirect_from:
 3. **D. Wu**, J. Peng, S. Yu, and C. Ma, “Trust-Region Cauchy-Step Optimization for Stable Training of Multi-Task Perception in Intelligent Vehicles,” *Engineering Applications of Artificial Intelligence*, under review.<br>
    **JCR Q1｜中科院一区 TOP｜一作｜在审**
 
-## 其他已发表论文
+</div>
+</details>
+
+<details class="publication-fold">
+<summary>其他已发表/录用论文（4 篇）</summary>
+<div class="publication-fold__content" markdown="1">
 
 1. Z. Yu, J. Zhao, R. Jiang, J. Shen, **D. Wu**, and S. Zheng, “Theory-Data Dual Driven Car Following Model in Traffic Flow Mixed of AVs and HDVs,” *Transportation Research Part C: Emerging Technologies*, vol. 165, Art. no. 104747, 2024. [[DOI](https://doi.org/10.1016/j.trc.2024.104747)]<br>
    **SCI 期刊论文｜第五作者｜已发表**
@@ -69,11 +82,189 @@ redirect_from:
 4. S. Yu, J. Peng, S. Wang, **D. Wu**, and C. Ma, “Feature-Level Vehicle-Infrastructure Cooperative Perception With Adaptive Fusion for 3D Object Detection,” *Smart Cities*, vol. 8, no. 5, Art. no. 171, 2025. [[DOI](https://doi.org/10.3390/smartcities8050171)]<br>
    **SCI 期刊论文｜第四作者｜已发表**
 
+</div>
+</details>
+
+<span class='anchor' id='internship-experience'></span>
+
+# 💼 实习经历
+
+**魔法原子机器人科技有限公司｜具身智能算法实习生**<br>
+**时间**：2026.06 - 2026.10
+
+### VLA 真机推理与工程化｜Flow Matching 少步采样
+
+- **项目背景**：针对 Flow Matching 策略推理步数多与真机部署延迟问题，开展少步采样与推理框架优化。
+- **少步采样**：设计两步非等间隔采样，首阶段以大步长快速推进流轨迹，次阶段结合 SnapFlow 精细推理；将 π0.5 推理耗时由 **61.557 ms 降至 21.956 ms**，实现 **2.804×** 加速且成功率保持不变。
+- **工程化**：搭建分布式机器人推理框架，统一接入并评测 VLASH、LeGATO、RTC、TT-RTC、Temporal Smoothing 等 Action Chunk 优化方法；代码：[[GitHub](https://github.com/MagiclabRobotics/Inference)]。
+
+### χ0 双臂叠衣｜长程柔性物体操作 + RLToken
+
+- **数据与优化**：融合遥操作数据与 DAgger 构建 χ0 迭代训练闭环；针对长程执行中的重复 Retry 与抓取偏差，引入 RLToken 强化精细操作；针对失败案例设计叠衣数据采集流程，优化夹爪落点位置。
+- **真机结果**：叠衣成功率达 **100%**，完成时间由 **75 s 降至 48 s（↓36%）**；成果在 WAIC / WRC 2026 现场展示。[[Demo](https://weixin.qq.com/sph/A4X6oYQoUt)]
+
+#### 真机 Demo｜双臂叠衣优化结果
+
+<div class="project-video-showcase project-video-showcase--single internship-demo-showcase">
+  <div class="project-video-player">
+    <video controls autoplay muted loop playsinline preload="metadata" src="/files/video/internship/magic-folding-demo.mp4">
+      <source src="/files/video/internship/magic-folding-demo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="project-video-current">χ0 双臂叠衣｜优化后真机 Demo</div>
+  </div>
+</div>
+
+<span class='anchor' id='embodied-ai-research'></span>
+
+# 🦾 具身智能研究
+
+<span class='anchor' id='research-ctp'></span>
+
+### ICRA 2027 在投｜Conditional Trajectory Peaks（CTP）
+
+**Conditional Trajectory Peaks: Single-Pass Multimodal Policies over Action Chunks**
+
+- 提出单次前向推理的轨迹级多模态策略，通过 **DAPS** 缓解模式坍塌，并利用 **ETBT** 在滚动重规划过程中保持行为模式一致；生成完整 Action Chunk 仅需 **1 次网络评估（NFE = 1）**。
+- 在 Push-T、D3IL 与 LIBERO 上分别取得 **91.40%**、最高 **100.0%** 和平均 **97.25%** 的任务成功率；双臂双盘真机实验完成 **50/50** 次成功执行，并稳定保留两种有效操作模式。
+- 将单次推理延迟由 **218.24 ms 降至 75.80 ms**，兼顾生成效率、动作连续性与多模态行为表达。
+
+#### 模型结构
+
+<a class="research-architecture" href="/images/internship/ctp-architecture.png" target="_blank" rel="noopener"><img src="/images/internship/ctp-architecture.png" alt="CTP 模型结构图"></a>
+
+#### 真机 Demo
+
+##### 多模态双盘放置｜相同初始状态下的 8 次 Rollout
+
+<div class="project-video-showcase project-video-showcase--single">
+  <div class="project-video-player">
+    <video controls autoplay muted loop playsinline preload="metadata" poster="/images/internship/ctp-real-two-plate.png" src="/files/video/research/ctp-real-two-plate.mp4">
+      <source src="/files/video/research/ctp-real-two-plate.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="project-video-current">CTP｜同一起点下保留左右两种成功放置模式</div>
+  </div>
+</div>
+
+##### 代表性真机 Rollout
+
+<div class="project-video-showcase research-demo-showcase">
+  <div class="project-video-grid">
+    <div class="project-video-player">
+      <video controls autoplay muted loop playsinline preload="metadata" src="/files/video/research/ctp-real-bottle-uprighting.mp4">
+        <source src="/files/video/research/ctp-real-bottle-uprighting.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="project-video-current">瓶体扶正｜Success 01</div>
+    </div>
+    <div class="project-video-player">
+      <video controls autoplay muted loop playsinline preload="metadata" src="/files/video/research/ctp-real-bottle-uprighting-02.mp4">
+        <source src="/files/video/research/ctp-real-bottle-uprighting-02.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="project-video-current">瓶体扶正｜Success 02</div>
+    </div>
+    <div class="project-video-player">
+      <video controls autoplay muted loop playsinline preload="metadata" src="/files/video/research/ctp-real-pen-placement.mp4">
+        <source src="/files/video/research/ctp-real-pen-placement.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="project-video-current">笔具放置｜Success 01</div>
+    </div>
+    <div class="project-video-player">
+      <video controls autoplay muted loop playsinline preload="metadata" src="/files/video/research/ctp-real-pen-placement-02.mp4">
+        <source src="/files/video/research/ctp-real-pen-placement-02.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="project-video-current">笔具放置｜Success 02</div>
+    </div>
+  </div>
+</div>
+
+<span class='anchor' id='research-eapn'></span>
+
+### ICRA 2027 在投｜Execution-Aligned Progressive Noise（EAPN）
+
+**Execution-Aligned Progressive Noise for Consistent Asynchronous Replanning in Generative Robot Policies**
+
+- 针对生成式机器人策略异步重规划时的动作跳变问题，提出共享的 **AR(1) 持续噪声轨迹**，使随机历史与真实执行位移对齐，同时保持 Chunk 内时间相关性与跨 Chunk 行为连续性。
+- 在 D3IL Avoiding 上取得 **78.96%** 成功率，高于 DDPM-ACT 的 **73.13%**，并显著减少模式切换；在 LIBERO 高推理延迟设置（D = 15）下达到 **75.0%**，优于 T-RTC 的 **73.0%** 与 VLASH 的 **68.3%**。
+- 在 AGILEX-PIPER 真机任务中，Object Storage / 双臂 Cloth Folding 成功率达到 **90.0% / 96.7%**，较 Naive Async 的 **65.0% / 63.3%** 分别提升 **25.0 / 33.4** 个百分点。
+
+#### 模型结构
+
+<a class="research-architecture" href="/images/internship/eapn-architecture.png" target="_blank" rel="noopener"><img src="/images/internship/eapn-architecture.png" alt="EAPN 模型结构图"></a>
+
+#### 真机 Demo
+
+##### 双臂叠衣｜EAPN 与 Baseline 对比
+
+<div class="research-urdf-embed">
+  <iframe id="eapn-urdf-demo" src="/files/eapn-urdf-demo/index.html" title="EAPN 与 Baseline 真机视频及 URDF 双臂同步回放" loading="lazy"></iframe>
+</div>
+
+<script>
+window.addEventListener('message', function (event) {
+  if (event.origin !== window.location.origin || !event.data || event.data.source !== 'eapn-urdf-demo') return;
+  var frame = document.getElementById('eapn-urdf-demo');
+  if (!frame) return;
+  var height = Math.max(720, Math.min(1800, Number(event.data.height) || 0));
+  frame.style.height = height + 'px';
+});
+</script>
+
+##### Object Storage｜Trial 01
+
+<div class="project-video-showcase research-demo-showcase">
+  <div class="project-video-grid">
+    <div class="project-video-player">
+      <div class="research-demo-method research-demo-method--ours">EAPN｜Ours｜Success</div>
+      <video controls autoplay muted loop playsinline preload="metadata" src="/files/video/research/eapn-object-storage-trial1-ours.mp4">
+        <source src="/files/video/research/eapn-object-storage-trial1-ours.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="project-video-player">
+      <div class="research-demo-method research-demo-method--baseline">π0.5｜Baseline｜Success</div>
+      <video controls autoplay muted loop playsinline preload="metadata" src="/files/video/research/eapn-object-storage-trial1-baseline.mp4">
+        <source src="/files/video/research/eapn-object-storage-trial1-baseline.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</div>
+
+##### Object Storage｜Trial 03
+
+<div class="project-video-showcase research-demo-showcase">
+  <div class="project-video-grid">
+    <div class="project-video-player">
+      <div class="research-demo-method research-demo-method--ours">EAPN｜Ours｜Success</div>
+      <video controls autoplay muted loop playsinline preload="metadata" src="/files/video/research/eapn-object-storage-trial3-ours.mp4">
+        <source src="/files/video/research/eapn-object-storage-trial3-ours.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="project-video-player">
+      <div class="research-demo-method research-demo-method--baseline">π0.5｜Baseline｜Success</div>
+      <video controls autoplay muted loop playsinline preload="metadata" src="/files/video/research/eapn-object-storage-trial3-baseline.mp4">
+        <source src="/files/video/research/eapn-object-storage-trial3-baseline.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</div>
+
 <span class='anchor' id='projects'></span>
 
 # 💻 Projects
 
-<div class='paper-box' id='project-folding'><div class='paper-box-image'><div><div class="badge">Project 1</div><img src='images/projects/video-posters/robot1.jpg' alt="双臂机器人叠衣任务实机画面" width="100%"></div></div>
+<span class='anchor' id='projects-embodied-ai'></span>
+
+## 🤖 具身智能
+
+<div class='paper-box paper-box--text-only' id='project-folding'>
 <div class='paper-box-text' markdown="1">
 
 **双臂机器人叠衣任务｜基于 π0.5 的叠衣任务适配与实机验证**
@@ -95,7 +286,11 @@ redirect_from:
 </div>
 </div>
 
-<div class='paper-box' id='project-mpv'><div class='paper-box-image'><div><div class="badge">Project 2</div><img src='images/projects/video-posters/AD2.jpg' alt="新能源 MPV 自动驾驶实车画面" width="100%"></div></div>
+<span class='anchor' id='projects-autonomous-driving'></span>
+
+## 🚗 自动驾驶
+
+<div class='paper-box paper-box--text-only' id='project-mpv'>
 <div class='paper-box-text' markdown="1">
 
 **校企联合实车项目｜新能源 MPV 智能驾驶算法开发**
@@ -157,7 +352,7 @@ redirect_from:
 </div>
 </div>
 
-<div class='paper-box' id='project-city-memory'><div class='paper-box-image'><div><div class="badge">Project 3</div><img src='images/projects/bev-tracking.png' alt="city-memory-driving" width="100%"></div></div>
+<div class='paper-box paper-box--text-only' id='project-city-memory'>
 <div class='paper-box-text' markdown="1">
 
 **城市记忆行车｜Transformer 跟踪 Head 设计与集成**
@@ -172,7 +367,11 @@ redirect_from:
 </div>
 </div>
 
-<div class='paper-box' id='project-inspection'><div class='paper-box-image'><div><div class="badge">Project 4</div><img src='images/projects/traffic-inspection.png' alt="traffic-infrastructure-inspection" width="100%"></div></div>
+<span class='anchor' id='projects-smart-transportation'></span>
+
+## 🏙️ 智慧交通
+
+<div class='paper-box paper-box--text-only' id='project-inspection'>
 <div class='paper-box-text' markdown="1">
 
 **交通基础设施智能巡检系统｜异常检测落地**
@@ -186,7 +385,48 @@ redirect_from:
 </div>
 </div>
 
-- 技术关键词：`Python`、`PyTorch`、`LeRobot`、`π0.5`、`DAgger`、`ROS2`、`TensorRT`、`YOLO`、`PointPillars`、`BEV`、`Transformer`
+<script>
+(function () {
+  function enableViewportAutoplay() {
+    var videos = document.querySelectorAll('.project-video-player video[autoplay]');
+
+    function playMuted(video) {
+      video.muted = true;
+      var playback = video.play();
+      if (playback && typeof playback.catch === 'function') {
+        playback.catch(function () {});
+      }
+    }
+
+    if (!('IntersectionObserver' in window)) {
+      videos.forEach(playMuted);
+      return;
+    }
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting && entry.intersectionRatio >= 0.15) {
+          playMuted(entry.target);
+        } else {
+          entry.target.pause();
+        }
+      });
+    }, {
+      threshold: [0, 0.15, 0.5]
+    });
+
+    videos.forEach(function (video) {
+      observer.observe(video);
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', enableViewportAutoplay);
+  } else {
+    enableViewportAutoplay();
+  }
+})();
+</script>
 
 <span class='anchor' id='honors-and-awards'></span>
 
@@ -211,13 +451,6 @@ redirect_from:
 
 <span class='anchor' id='technical-skills'></span>
 
-# 🛠 Technical Skills
-- **开发能力**：熟练掌握 Python 与 PyTorch 深度学习框架；熟练使用 ROS2、Git、Docker；熟练使用 Codex、Claude Code 等 AI 编程工具。
-- **算法方向**：对自动驾驶感知、规划、控制、端到端算法、VLA 算法与世界模型有深入了解。
-- **模型部署**：具备实车调试和模型工程化落地能力，了解端侧部署与加速链路，熟悉 PTQ/QAT 与 TensorRT。
+# 🛠 技术栈
 
-<span class='anchor' id='work-experience'></span>
-
-# 💼 Work Experience
-- **魔法原子机器人科技有限公司**：具身智能算法实习生，2026.06 - 2026.10。参与 VLA 真机推理优化、Flow Matching 少步采样、跨 Action Chunk 连续性优化与 χ0 双臂叠衣策略迭代。
-- **星宇车灯股份有限公司星宇研究院**
+- **具身策略与强化学习**：π0 / π0.5、OpenVLA、Kai0、GR00T N1.5、SmolVLA、ACT、Diffusion Policy、Flow Matching Policy、RLToken、GRPO / PPO / SAC

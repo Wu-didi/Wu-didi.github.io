@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EAPN 真机与 URDF 同步回放</title>
+    <link rel="stylesheet" href="v2_style.css">
+    <link rel="stylesheet" href="real_robot_style.css">
+    <link rel="stylesheet" href="real_robot_urdf_style.css">
+    <style>
+      html, body { background: transparent; }
+      body { padding: 0; }
+      .reference-real-case { margin: 0; }
+      .real-tcp-panel,
+      .real-tcp-under-video,
+      .real-downloads { display: none !important; }
+    </style>
+  </head>
+  <body>
+    <article id="real-robot-case" class="real-case reference-real-case" aria-label="EAPN 真机视频与 URDF 双臂同步回放"></article>
+    <script src="real_robot_data.js"></script>
+    <script src="real_robot_tcp_data.js"></script>
+    <script src="real_robot_tcp_viewer.js"></script>
+    <script src="real_robot_viewer.js"></script>
+    <script src="real_robot_urdf_viewer.js"></script>
+    <script>
+      (() => {
+        const reportHeight = () => {
+          window.parent.postMessage({
+            source: 'eapn-urdf-demo',
+            height: document.documentElement.scrollHeight
+          }, window.location.origin);
+        };
+        window.addEventListener('load', reportHeight);
+        new ResizeObserver(reportHeight).observe(document.body);
+      })();
+    </script>
+  </body>
+</html>
