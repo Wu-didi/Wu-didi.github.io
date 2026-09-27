@@ -11,14 +11,6 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-<span class='anchor' id='news'></span>
-
-# 🔥 News
-- *2026.06 - 2026.10*: 在魔法原子担任具身智能算法实习生，参与推理优化加速、Demo 成功率优化工作。
-- *2024.03 - 至今*: 在东南大学交通运输专业攻读博士学位，持续研究自动驾驶/具身智能端到端、VLA 与世界模型。
-- *2023.07 - 2024.01*: 在星宇车灯股份有限公司星宇研究院担任智能驾驶算法工程师，参与 BEV 算法预研。
-- *截至 2026 年 9 月*: 共发表/录用论文 **13 篇**（SCI 期刊论文 12 篇、TRB 会议论文 1 篇）；另有在审论文 5 篇，包括 JCR Q1 期刊论文 3 篇和 ICRA 2027 论文 2 篇。
-
 <span class='anchor' id='publications'></span>
 
 # 📝 Publications
