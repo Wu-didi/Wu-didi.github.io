@@ -95,18 +95,6 @@ redirect_from:
 - **数据与优化**：融合遥操作数据与 DAgger 构建 χ0 迭代训练闭环；针对长程执行中的重复 Retry 与抓取偏差，引入 RLToken 强化精细操作；针对失败案例设计叠衣数据采集流程，优化夹爪落点位置。
 - **真机结果**：叠衣成功率达 **100%**，完成时间由 **75 s 降至 48 s（↓36%）**；成果在 WAIC / WRC 2026 现场展示。[[Demo](https://weixin.qq.com/sph/A4X6oYQoUt)]
 
-#### 真机 Demo｜双臂叠衣优化结果
-
-<div class="project-video-showcase project-video-showcase--single internship-demo-showcase">
-  <div class="project-video-player">
-    <video controls autoplay muted loop playsinline preload="metadata" src="/files/video/internship/magic-folding-demo.mp4">
-      <source src="/files/video/internship/magic-folding-demo.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <div class="project-video-current">χ0 双臂叠衣｜优化后真机 Demo</div>
-  </div>
-</div>
-
 <span class='anchor' id='embodied-ai-research'></span>
 
 # 🦾 具身智能研究
