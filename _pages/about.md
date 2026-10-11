@@ -42,9 +42,9 @@ redirect_from:
 
 ## 在投/在审论文
 
-1. **D. Wu et al.**, “Conditional Trajectory Peaks: Single-Pass Multimodal Policies over Action Chunks,” *IEEE International Conference on Robotics and Automation (ICRA)*, under review, 2027. [[Project](#research-ctp)]<br>
+1. **D. Wu et al.**, “Conditional Trajectory Peaks: Single-Pass Multimodal Policies over Action Chunks,” *IEEE International Conference on Robotics and Automation (ICRA)*, under review, 2027. [[项目主页](https://embodied.magiclab.top/works/ctp/index.html)] [[arXiv](https://arxiv.org/abs/2610.06104)] [[本站展示](#research-ctp)]<br>
    **ICRA 2027｜一作｜在审**
-2. **D. Wu et al.**, “Execution-Aligned Progressive Noise for Consistent Asynchronous Replanning in Generative Robot Policies,” *IEEE International Conference on Robotics and Automation (ICRA)*, under review, 2027. [[Project](#research-eapn)]<br>
+2. **D. Wu et al.**, “Execution-Aligned Progressive Noise for Consistent Asynchronous Replanning in Generative Robot Policies,” *IEEE International Conference on Robotics and Automation (ICRA)*, under review, 2027. [[项目主页](https://embodied.magiclab.top/works/eapn/index.html)] [[arXiv](https://arxiv.org/abs/2610.06090)] [[本站展示](#research-eapn)]<br>
    **ICRA 2027｜一作｜在审**
 
 <details class="publication-fold">
@@ -84,11 +84,18 @@ redirect_from:
 **魔法原子机器人科技有限公司｜具身智能算法实习生**<br>
 **时间**：2026.06 - 2026.10
 
-### VLA 真机推理与工程化｜Flow Matching 少步采样
+### VLA 真机推理与工程化｜Flow Matching 少步采样｜[项目主页](https://embodied.magiclab.top/works/inference/index.html) · [arXiv](https://arxiv.org/abs/2609.39822) · [GitHub](https://github.com/MagiclabRobotics/Inference)
 
 - **项目背景**：针对 Flow Matching 策略推理步数多与真机部署延迟问题，开展少步采样与推理框架优化。
 - **少步采样**：设计两步非等间隔采样，首阶段以大步长快速推进流轨迹，次阶段结合 SnapFlow 精细推理；将 π0.5 推理耗时由 **61.557 ms 降至 21.956 ms**，实现 **2.804×** 加速且成功率保持不变。
-- **工程化**：搭建分布式机器人推理框架，统一接入并评测 VLASH、LeGATO、RTC、TT-RTC、Temporal Smoothing 等 Action Chunk 优化方法；代码：[[GitHub](https://github.com/MagiclabRobotics/Inference)]。
+- **工程化**：搭建分布式机器人推理框架，统一接入并评测 VLASH、LeGATO、RTC、TT-RTC、Temporal Smoothing 等 Action Chunk 优化方法。
+
+### Magic-W0｜结构化世界—动作具身基础模型｜[项目主页](https://embodied.magiclab.top/works/wam/magic-w0/index.html) · [arXiv](https://arxiv.org/abs/2609.39870)
+
+- **模型研发**：参与结构化世界表征与动作生成联合建模，涵盖当前几何、三维运动与未来任务语义建模。
+- **训练机制**：采用知识隔离，避免世界/动作辅助损失对 VLM 主干的梯度干扰，并结合辅助损失权重衰减提升训练稳定性。
+- **后训练**：完成 LIBERO 与真实机器人任务后训练；LIBERO 平均成功率达 **99.1%**，五项真机任务平均成功率达 **94.6%**，较 π0.5 提升 **2.8 个百分点**。
+- **技术交付**：负责 arXiv 技术报告全文撰写与项目主页制作。
 
 ### χ0 双臂叠衣｜长程柔性物体操作 + RLToken
 
@@ -113,7 +120,7 @@ redirect_from:
 
 <span class='anchor' id='research-ctp'></span>
 
-### ICRA 2027 在投｜Conditional Trajectory Peaks（CTP）
+### ICRA 2027 在投｜Conditional Trajectory Peaks（CTP）｜[项目主页](https://embodied.magiclab.top/works/ctp/index.html) · [arXiv](https://arxiv.org/abs/2610.06104)
 
 **Conditional Trajectory Peaks: Single-Pass Multimodal Policies over Action Chunks**
 
@@ -176,7 +183,7 @@ redirect_from:
 
 <span class='anchor' id='research-eapn'></span>
 
-### ICRA 2027 在投｜Execution-Aligned Progressive Noise（EAPN）
+### ICRA 2027 在投｜Execution-Aligned Progressive Noise（EAPN）｜[项目主页](https://embodied.magiclab.top/works/eapn/index.html) · [arXiv](https://arxiv.org/abs/2610.06090)
 
 **Execution-Aligned Progressive Noise for Consistent Asynchronous Replanning in Generative Robot Policies**
 
