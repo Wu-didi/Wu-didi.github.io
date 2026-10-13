@@ -15,9 +15,9 @@ redirect_from:
 
 # 📝 Publications
 
-**论文概况（截至 2026 年 9 月）**：共发表/录用论文 **13 篇**（SCI 期刊论文 12 篇、TRB 会议论文 1 篇）；其中第一作者 7 篇、共同第一作者 1 篇、通讯作者 1 篇。另有在审论文 5 篇，包括 JCR Q1 期刊论文 3 篇和 ICRA 2027 论文 2 篇。
+**论文概况（截至 2026 年 10 月）**：共发表/录用论文 **14 篇**（SCI 期刊论文 13 篇、TRB 会议论文 1 篇）；其中第一作者 8 篇、共同第一作者 1 篇、通讯作者 1 篇。另有在审论文 4 篇，包括 JCR Q1 期刊论文 2 篇和 ICRA 2027 论文 2 篇。
 
-## 已发表/录用论文（共 13 篇）
+## 已发表/录用论文（共 14 篇）
 
 **第一作者、共同第一作者及通讯作者**
 
@@ -39,6 +39,8 @@ redirect_from:
    **JCR Q1｜中科院一区 TOP｜通讯作者｜已发表**
 9. **D. Wu**, J. Peng, S. Yu, and C. Ma, “Fusion of Image and Point Cloud Data Features for 3D Target Detection,” *Transportation Research Board Annual Meeting*.<br>
    **TRB 会议论文｜一作｜已发表**
+10. **D. Wu**, J. Peng, S. Yu, and C. Ma, “A Multi-Task Gradient Covariance Decomposition Network for Panoptic Driving Perception,” *IEEE Transactions on Intelligent Transportation Systems*, accepted.<br>
+   **JCR Q1｜中科院一区｜IF 9.1｜一作｜已录用**
 
 ## 在投/在审论文
 
@@ -48,14 +50,12 @@ redirect_from:
    **ICRA 2027｜一作｜在审**
 
 <details class="publication-fold">
-<summary>其他在投/在审论文（3 篇）</summary>
+<summary>其他在投/在审论文（2 篇）</summary>
 <div class="publication-fold__content" markdown="1">
 
-1. **D. Wu**, J. Peng, S. Yu, and C. Ma, “A Multi-Task Gradient Covariance Decomposition Network for Panoptic Driving Perception,” *IEEE Transactions on Intelligent Transportation Systems*, under review.<br>
-   **JCR Q1｜中科院一区｜IF 9.1｜一作｜在审**
-2. **D. Wu**, J. Peng, S. Yu, and C. Ma, “Using a Vision-Language Model as a Semantic Coach,” *IEEE Transactions on Neural Networks and Learning Systems*, under review.<br>
+1. **D. Wu**, J. Peng, S. Yu, and C. Ma, “Using a Vision-Language Model as a Semantic Coach,” *IEEE Transactions on Neural Networks and Learning Systems*, under review.<br>
    **JCR Q1｜中科院一区 TOP｜一作｜在审**
-3. **D. Wu**, J. Peng, S. Yu, and C. Ma, “Trust-Region Cauchy-Step Optimization for Stable Training of Multi-Task Perception in Intelligent Vehicles,” *Engineering Applications of Artificial Intelligence*, under review.<br>
+2. **D. Wu**, J. Peng, S. Yu, and C. Ma, “Trust-Region Cauchy-Step Optimization for Stable Training of Multi-Task Perception in Intelligent Vehicles,” *Engineering Applications of Artificial Intelligence*, under review.<br>
    **JCR Q1｜中科院一区 TOP｜一作｜在审**
 
 </div>
@@ -447,9 +447,3 @@ window.addEventListener('message', function (event) {
 - **东南大学**：交通运输，博士在读，2024.03 - 2027.12（预计毕业）
 - **北京交通大学**：交通运输，硕士（保送），2021.09 - 2023.06
 - **南京工业大学**：交通工程，学士，2017.09 - 2021.06，专业排名 3 / 86
-
-<span class='anchor' id='technical-skills'></span>
-
-# 🛠 技术栈
-
-- **具身策略与强化学习**：π0 / π0.5、OpenVLA、Kai0、GR00T N1.5、SmolVLA、ACT、Diffusion Policy、Flow Matching Policy、RLToken、GRPO / PPO / SAC
