@@ -15,28 +15,28 @@ redirect_from:
 
 # 📝 Publications
 
-**论文概况（截至 2026 年 10 月）**：共发表/录用论文 **14 篇**（SCI 期刊论文 13 篇、TRB 会议论文 1 篇）；其中第一作者 8 篇、共同第一作者 1 篇、通讯作者 1 篇。另有在审论文 4 篇，包括 JCR Q1 期刊论文 2 篇和 ICRA 2027 论文 2 篇。
+**论文概况（截至 2026 年 10 月）**：共发表/录用论文 **15 篇**（SCI 期刊论文 14 篇、TRB 会议论文 1 篇）；其中第一作者 8 篇、共同第一作者 1 篇、通讯作者 1 篇。另有在审论文 4 篇，包括 JCR Q1 期刊论文 2 篇和 ICRA 2027 论文 2 篇。
 
-## 已发表/录用论文（共 14 篇）
+## 已发表/录用论文（共 15 篇）
 
 **第一作者、共同第一作者及通讯作者**
 
 1. **D. Wu**, J. Peng, S. Yu, K. Xu, Z. Chen, and C. Ma, “UC-Track: Uncertainty-Aware and Task-Coupled 3-D Multi-Object Tracking,” *IEEE Transactions on Intelligent Transportation Systems*, vol. 27, no. 9, pp. 10825–10839, 2026. [[DOI](https://doi.org/10.1109/TITS.2026.3687222)]<br>
-   **JCR Q1｜中科院一区 TOP｜一作｜已发表**
+   **JCR Q1｜中科院一区 TOP｜IF 9.1｜一作｜已发表**
 2. **D. Wu**, J. Peng, S. Yu, Y. Ge, C. Ma, and J. Zhou, “UKD-TEAD: An Unsupervised Knowledge Distillation Framework for Detecting Anomalies in Traffic Equipment With Various Aspect Ratios,” *IEEE Internet of Things Journal*, vol. 12, no. 10, pp. 14080–14095, 2025. [[DOI](https://doi.org/10.1109/JIOT.2024.3524788)]<br>
-   **JCR Q1｜中科院一区 TOP｜一作｜已发表**
+   **JCR Q1｜中科院一区 TOP｜IF 8.7｜一作｜已发表**
 3. **D. Wu**, J. Peng, Y. Ge, S. Yu, K. Xu, and C. Ma, “Communication-Efficient Dual-Branch Transmission With Semantic Masks and Quantized Features for V2X Cooperative Perception,” *IEEE Internet of Things Journal*, vol. 13, no. 16, pp. 35860–35873, 2026. [[DOI](https://doi.org/10.1109/JIOT.2026.3696886)]<br>
-   **JCR Q1｜中科院一区 TOP｜一作｜已发表**
+   **JCR Q1｜中科院一区 TOP｜IF 8.7｜一作｜已发表**
 4. **D. Wu**, J. Peng, S. Yu, K. Xu, Y. Ge, and C. Ma, “SPADet: A Lightweight Shape-Prior-Aware Framework for Traffic-Signal Anomaly Detection in Smart Cities,” *IEEE Internet of Things Journal*, vol. 13, no. 18, pp. 42761–42774, 2026. [[DOI](https://doi.org/10.1109/JIOT.2026.3711500)]<br>
-   **JCR Q1｜中科院一区 TOP｜一作｜已发表**
+   **JCR Q1｜中科院一区 TOP｜IF 8.7｜一作｜已发表**
 5. **D. Wu**, J. Zhao, and Z. Yu, “3D Object Detection Based on Fusion of Image and Point Cloud in Autonomous Driving Traffic Scenarios,” *Multimedia Tools and Applications*, vol. 84, no. 20, pp. 23259–23277, 2025. [[DOI](https://doi.org/10.1007/s11042-024-19399-y)]<br>
-   **SCI 期刊论文｜一作｜已发表**
+   **SCI 期刊论文｜IF 3.0（2024 JCR）｜一作｜已发表**
 6. J. Zhao, **D. Wu**, Z. Yu, and Z. Gao, “DRMNet: A Multi-Task Detection Model Based on Image Processing for Autonomous Driving Scenarios,” *IEEE Transactions on Vehicular Technology*, vol. 72, no. 12, pp. 15341–15355, 2023. [[DOI](https://doi.org/10.1109/TVT.2023.3296735)]<br>
-   **JCR Q1｜一作（导师一作）｜已发表**
+   **JCR Q1｜IF 7.5｜一作（导师一作）｜已发表**
 7. S. Yu, **D. Wu**, S. Li, J. Peng, Y. Li, Y. Ge, and C. Ma, “VEpred: End-to-End Map-Free Trajectory Prediction via Geometry Aware Visual Queries,” *Measurement Science and Technology*, vol. 37, no. 10, Art. no. 105106, 2026. [[DOI](https://doi.org/10.1088/1361-6501/ae4dda)]<br>
-   **JCR Q1｜共同一作｜已发表**
+   **JCR Q1｜IF 3.7｜共同一作｜已发表**
 8. J. Peng, J. Wang, N. Zhang, **D. Wu**, and C. Ma, “Graph Channel Receptive Field Transformer for Multi-Agent Trajectory Prediction,” *Engineering Applications of Artificial Intelligence*, vol. 176, Art. no. 114748, 2026. [[DOI](https://doi.org/10.1016/j.engappai.2026.114748)]<br>
-   **JCR Q1｜中科院一区 TOP｜通讯作者｜已发表**
+   **JCR Q1｜中科院一区 TOP｜IF 9.0｜通讯作者｜已发表**
 9. **D. Wu**, J. Peng, S. Yu, and C. Ma, “Fusion of Image and Point Cloud Data Features for 3D Target Detection,” *Transportation Research Board Annual Meeting*.<br>
    **TRB 会议论文｜一作｜已发表**
 10. **D. Wu**, J. Peng, S. Yu, and C. Ma, “A Multi-Task Gradient Covariance Decomposition Network for Panoptic Driving Perception,” *IEEE Transactions on Intelligent Transportation Systems*, accepted.<br>
@@ -44,35 +44,37 @@ redirect_from:
 
 ## 在投/在审论文
 
-1. **D. Wu et al.**, “Conditional Trajectory Peaks: Single-Pass Multimodal Policies over Action Chunks,” *IEEE International Conference on Robotics and Automation (ICRA)*, under review, 2027. [[项目主页](https://embodied.magiclab.top/works/ctp/index.html)] [[arXiv](https://arxiv.org/abs/2610.06104)] [[本站展示](#research-ctp)]<br>
-   **ICRA 2027｜一作｜在审**
-2. **D. Wu et al.**, “Execution-Aligned Progressive Noise for Consistent Asynchronous Replanning in Generative Robot Policies,” *IEEE International Conference on Robotics and Automation (ICRA)*, under review, 2027. [[项目主页](https://embodied.magiclab.top/works/eapn/index.html)] [[arXiv](https://arxiv.org/abs/2610.06090)] [[本站展示](#research-eapn)]<br>
-   **ICRA 2027｜一作｜在审**
+1. **D. Wu et al.**, “Conditional Trajectory Peaks: Single-Pass Multimodal Policies over Action Chunks,” *arXiv preprint arXiv:2610.06104*, 2026; submitted to IEEE ICRA 2027 (under review). [[项目主页](https://embodied.magiclab.top/works/ctp/index.html)] [[arXiv](https://arxiv.org/abs/2610.06104)] [[本站展示](#research-ctp)]<br>
+   **ICRA 2027 投稿｜一作｜在审**
+2. **D. Wu et al.**, “Execution-Aligned Progressive Noise for Consistent Asynchronous Replanning in Generative Robot Policies,” *arXiv preprint arXiv:2610.06090*, 2026; submitted to IEEE ICRA 2027 (under review). [[项目主页](https://embodied.magiclab.top/works/eapn/index.html)] [[arXiv](https://arxiv.org/abs/2610.06090)] [[本站展示](#research-eapn)]<br>
+   **ICRA 2027 投稿｜一作｜在审**
 
 <details class="publication-fold">
 <summary>其他在投/在审论文（2 篇）</summary>
 <div class="publication-fold__content" markdown="1">
 
 1. **D. Wu**, J. Peng, S. Yu, and C. Ma, “Using a Vision-Language Model as a Semantic Coach,” *IEEE Transactions on Neural Networks and Learning Systems*, under review.<br>
-   **JCR Q1｜中科院一区 TOP｜一作｜在审**
+   **JCR Q1｜中科院一区 TOP｜IF 9.7｜一作｜在审**
 2. **D. Wu**, J. Peng, S. Yu, and C. Ma, “Trust-Region Cauchy-Step Optimization for Stable Training of Multi-Task Perception in Intelligent Vehicles,” *Engineering Applications of Artificial Intelligence*, under review.<br>
-   **JCR Q1｜中科院一区 TOP｜一作｜在审**
+   **JCR Q1｜中科院一区 TOP｜IF 9.0｜一作｜在审**
 
 </div>
 </details>
 
 <details class="publication-fold">
-<summary>其他已发表/录用论文（4 篇）</summary>
+<summary>其他已发表/录用论文（5 篇）</summary>
 <div class="publication-fold__content" markdown="1">
 
 1. Z. Yu, J. Zhao, R. Jiang, J. Shen, **D. Wu**, and S. Zheng, “Theory-Data Dual Driven Car Following Model in Traffic Flow Mixed of AVs and HDVs,” *Transportation Research Part C: Emerging Technologies*, vol. 165, Art. no. 104747, 2024. [[DOI](https://doi.org/10.1016/j.trc.2024.104747)]<br>
-   **SCI 期刊论文｜第五作者｜已发表**
+   **SCI 期刊论文｜IF 8.4｜第五作者｜已发表**
 2. J. Zhou, J. Peng, S. Yu, Y. Fan, H. Zhang, and **D. Wu**, “Toward Ecological Decision-Making on Highways: A Multiobjective Eco-Driving Framework for Connected FCHEVs via Offline-to-Online Reinforcement Learning,” *IEEE Transactions on Transportation Electrification*, vol. 12, no. 1, pp. 440–452, 2026. [[DOI](https://doi.org/10.1109/TTE.2025.3615972)]<br>
-   **SCI 期刊论文｜第六作者｜已发表**
+   **SCI 期刊论文｜IF 8.5｜第六作者｜已发表**
 3. J. Zhao, Z. Yu, R. Jiang, **D. Wu**, and S. Zheng, “Car Following Trajectory Planning of CAVs: An Improved APF Model With Considering the Stochasticity of HDVs,” *Physica A: Statistical Mechanics and its Applications*, vol. 658, Art. no. 130265, 2025. [[DOI](https://doi.org/10.1016/j.physa.2024.130265)]<br>
-   **SCI 期刊论文｜第四作者｜已发表**
+   **SCI 期刊论文｜IF 3.3｜第四作者｜已发表**
 4. S. Yu, J. Peng, S. Wang, **D. Wu**, and C. Ma, “Feature-Level Vehicle-Infrastructure Cooperative Perception With Adaptive Fusion for 3D Object Detection,” *Smart Cities*, vol. 8, no. 5, Art. no. 171, 2025. [[DOI](https://doi.org/10.3390/smartcities8050171)]<br>
-   **SCI 期刊论文｜第四作者｜已发表**
+   **SCI 期刊论文｜IF 6.6｜第四作者｜已发表**
+5. Y. Zhou, J. Peng, **D. Wu**, Z. Wang, and C. Ma, “MDOLF: Framework for Multi-Target Detection and Online Localization of Ground Objects Based on Aerial Imagery in the Vehicle-UAV Collaboration Scenario,” *Aerospace Science and Technology*, vol. 180, Art. no. 113703, 2027. [[DOI](https://doi.org/10.1016/j.ast.2026.113703)]<br>
+   **SCI 期刊论文｜IF 6.4｜第三作者｜已录用**
 
 </div>
 </details>
